@@ -941,21 +941,33 @@
         border-radius: calc(2.25rem - 8px) !important;
       }
 
-      /* Botón interactivo de copiar número en Hero Mobile (Altura compacta a la mitad) */
+      /* Botón interactivo de copiar número en Hero Mobile (Altura compacta a la mitad y perfectamente centrado) */
       .btn-copy-wa {
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
         background: rgba(255, 255, 255, 0.05) !important;
         border: 1px solid rgba(240, 220, 255, 0.2) !important;
         color: var(--text-main) !important;
-        gap: 0.35rem !important;
-        padding: 0.15rem 0.65rem 0.15rem 0.35rem !important;
-        min-height: 24px !important;
+        gap: 0.45rem !important;
+        padding: 0.25rem 0.85rem 0.25rem 0.4rem !important;
+        min-height: 26px !important;
         height: auto !important;
         border-radius: 9999px !important;
-        font-size: 0.72rem !important;
+        font-size: 0.74rem !important;
         font-weight: 500 !important;
-        line-height: 1.2 !important;
+        line-height: 1 !important;
         cursor: pointer !important;
         transition: all 250ms var(--ease-out) !important;
+        vertical-align: middle !important;
+      }
+      .btn-copy-wa .copy-btn-text {
+        display: inline-flex !important;
+        align-items: center !important;
+        line-height: 1 !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        transform: translateY(0.5px);
       }
       .btn-copy-wa:hover, .btn-copy-wa:active {
         background: rgba(112, 48, 160, 0.25) !important;
@@ -963,19 +975,22 @@
         color: #fff !important;
       }
       .btn-copy-wa .copy-icon-box {
-        width: 1.15rem !important;
-        height: 1.15rem !important;
+        width: 1.25rem !important;
+        height: 1.25rem !important;
         border-radius: 50% !important;
         background: rgba(240, 220, 255, 0.1) !important;
-        display: flex !important;
+        display: inline-flex !important;
         align-items: center !important;
         justify-content: center !important;
         color: var(--primary-light) !important;
         flex-shrink: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
       }
       .btn-copy-wa .copy-icon-box svg {
-        width: 10px !important;
-        height: 10px !important;
+        width: 11px !important;
+        height: 11px !important;
+        display: block !important;
       }
     }
 

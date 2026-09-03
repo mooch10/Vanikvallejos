@@ -904,6 +904,74 @@
       }
     }
 
+    /* Mobile Only & Desktop Only Display Utilities */
+    .mobile-only {
+      display: none !important;
+    }
+
+    @media (max-width: 768px) {
+      .mobile-only {
+        display: inline-flex !important;
+      }
+      .mobile-only-flex {
+        display: flex !important;
+      }
+
+      /* Fix de visibilidad para el retrato de Vanina en móviles */
+      .about-portrait-col {
+        opacity: 1 !important;
+        transform: none !important;
+        visibility: visible !important;
+        display: block !important;
+        width: 100% !important;
+        max-width: 360px !important;
+        margin: 0 auto 2.5rem auto !important;
+      }
+      .about-portrait-col #mentorTiltedCard {
+        transform: none !important;
+        will-change: auto !important;
+        pointer-events: auto !important;
+      }
+      .about-portrait-col img {
+        display: block !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: 380px !important;
+        object-fit: cover !important;
+        border-radius: calc(2.25rem - 8px) !important;
+      }
+
+      /* Botón interactivo de copiar número en Hero Mobile */
+      .btn-copy-wa {
+        background: rgba(255, 255, 255, 0.05) !important;
+        border: 1px solid rgba(240, 220, 255, 0.2) !important;
+        color: var(--text-main) !important;
+        gap: 0.5rem !important;
+        padding: 0.4rem 1rem 0.4rem 0.6rem !important;
+        border-radius: 9999px !important;
+        font-size: 0.825rem !important;
+        font-weight: 500 !important;
+        cursor: pointer !important;
+        transition: all 250ms var(--ease-out) !important;
+      }
+      .btn-copy-wa:hover, .btn-copy-wa:active {
+        background: rgba(112, 48, 160, 0.25) !important;
+        border-color: var(--primary-light) !important;
+        color: #fff !important;
+      }
+      .btn-copy-wa .copy-icon-box {
+        width: 1.85rem !important;
+        height: 1.85rem !important;
+        border-radius: 50% !important;
+        background: rgba(240, 220, 255, 0.1) !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        color: var(--primary-light) !important;
+        flex-shrink: 0 !important;
+      }
+    }
+
     @media (min-width: 769px) {
       .mobile-toggle { display: none !important; }
       .constellation-desktop-view {
@@ -1041,6 +1109,17 @@
             </span>
           </a>
 
+          <!-- Botón copiar WhatsApp exclusivo para mobile en el inicio -->
+          <button type="button" class="btn-copy-wa mobile-only" onclick="copyWhatsAppNumber(this)" aria-label="Copiar número de WhatsApp">
+            <span class="copy-icon-box">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+            </span>
+            <span class="copy-btn-text">Copiar número: +54 9 291 536-7461</span>
+          </button>
+
           <a href="#pilares" class="btn-island btn-secondary">
             <span>Explorar los Pilares</span>
             <span class="btn-icon-circle">
@@ -1092,8 +1171,8 @@
             </svg>
           </div>
           <div class="double-bezel tilted-card" id="mentorTiltedCard" style="padding: 8px; border-radius: 2.25rem;">
-            <div style="border-radius: calc(2.25rem - 8px); overflow: hidden; position: relative; aspect-ratio: 4/5;">
-              <img src="assets/images/portrait_enhanced.jpg" alt="Vanina K Vallejos" loading="lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover; transition: transform 700ms var(--ease-smooth);" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'" />
+            <div style="border-radius: calc(2.25rem - 8px); overflow: hidden; position: relative; aspect-ratio: 4/5; background: #130c1d;">
+              <img src="assets/images/portrait_enhanced.jpg" alt="Vanina K Vallejos" decoding="async" style="width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 700ms var(--ease-smooth);" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'" />
               <div style="position: absolute; inset: 0; background: linear-gradient(180deg, transparent 60%, rgba(8, 6, 11, 0.85) 100%); pointer-events: none;"></div>
               <div style="position: absolute; bottom: 1.5rem; left: 1.5rem; right: 1.5rem;">
                 <div class="font-serif" style="font-size: 1.5rem; color: #fff; font-weight: 500;">Vanina K Vallejos</div>
@@ -2617,6 +2696,59 @@
         desc.style.opacity = '1';
         desc.style.transform = 'translateY(0)';
       }, 150);
+    }
+
+    // =========================================================================
+    // COPIAR NÚMERO DE WHATSAPP EN MOBILE CON FEEDBACK VISUAL
+    // =========================================================================
+    function copyWhatsAppNumber(buttonEl) {
+      const phoneNumber = '+54 9 291 536-7461';
+      const cleanNumber = '+5492915367461';
+      
+      function showSuccess() {
+        const textSpan = buttonEl.querySelector('.copy-btn-text');
+        const iconBox = buttonEl.querySelector('.copy-icon-box');
+        const originalText = textSpan.textContent;
+        const originalIcon = iconBox.innerHTML;
+
+        textSpan.textContent = '¡Número copiado al portapapeles!';
+        textSpan.style.color = '#25D366';
+        iconBox.innerHTML = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#25D366" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>';
+        buttonEl.style.borderColor = 'rgba(37, 211, 102, 0.6)';
+
+        setTimeout(() => {
+          textSpan.textContent = originalText;
+          textSpan.style.color = '';
+          iconBox.innerHTML = originalIcon;
+          buttonEl.style.borderColor = '';
+        }, 2500);
+      }
+
+      if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(phoneNumber).then(showSuccess).catch(() => {
+          fallbackCopyText(phoneNumber, showSuccess);
+        });
+      } else {
+        fallbackCopyText(phoneNumber, showSuccess);
+      }
+    }
+
+    function fallbackCopyText(text, callback) {
+      const textArea = document.createElement('textarea');
+      textArea.value = text;
+      textArea.style.position = 'fixed';
+      textArea.style.top = '-9999px';
+      textArea.style.left = '-9999px';
+      document.body.appendChild(textArea);
+      textArea.focus();
+      textArea.select();
+      try {
+        document.execCommand('copy');
+        if (callback) callback();
+      } catch (err) {
+        console.error('Error al copiar', err);
+      }
+      document.body.removeChild(textArea);
     }
   </script>
 </body>

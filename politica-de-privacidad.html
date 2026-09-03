@@ -1,0 +1,314 @@
+﻿<!DOCTYPE html>
+<html lang=es class=scroll-smooth>
+<head>
+  <meta charset=UTF-8 />
+  <meta name=viewport content=width=device-width, initial-scale=1.0, viewport-fit=cover />
+  <title>Políticas de Privacidad & Confidencialidad | Vanina K Vallejos</title>
+  <meta name=description content=Política de privacidad, confidencialidad sagrada y protección de datos personales de Vanina K Vallejos. />
+  <meta name=robots content=noindex, follow />
+
+  <!-- Sacred Mystical Favicon -->
+  <link rel=icon type=image/svg+xml href=data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2308060b'/%3E%3Cpath d='M16 4 C16 10 22 16 28 16 C22 16 16 22 16 28 C16 22 10 16 4 16 C10 16 16 10 16 4 Z' fill='%23f0dcff'/%3E%3Ccircle cx='16' cy='16' r='3' fill='%237030a0'/%3E%3C/svg%3E />
+
+  <!-- Google Fonts: Cormorant Garamond & Plus Jakarta Sans -->
+  <link rel=preconnect href=https://fonts.googleapis.com />
+  <link rel=preconnect href=https://fonts.gstatic.com crossorigin />
+  <link href=https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap rel=stylesheet />
+
+  <style>
+    :root {
+      --bg-dark: #08060b;
+      --bg-deep: #0e0915;
+      --primary-accent: #7030a0;
+      --primary-light: #f0dcff;
+      --lavender-glow: rgba(240, 220, 255, 0.15);
+      --violet-aura: rgba(112, 48, 160, 0.25);
+      --text-main: #f5f2f8;
+      --text-muted: #b8aecd;
+      --text-subtle: #796f8e;
+      --border-hairline: rgba(240, 220, 255, 0.14);
+      --border-light: rgba(255, 255, 255, 0.08);
+      
+      --font-serif: 'Cormorant Garamond', Georgia, serif;
+      --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      --ease-smooth: cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      font-family: var(--font-sans);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .grain-overlay {
+      position: fixed;
+      inset: 0;
+      width: 100vw;
+      height: 100vh;
+      pointer-events: none;
+      z-index: 99;
+      opacity: 0.025;
+      background-image: url(data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E);
+    }
+
+    .ambient-glow {
+      position: fixed;
+      top: -20vw;
+      left: 20vw;
+      width: 60vw;
+      height: 60vw;
+      border-radius: 50%;
+      background: radial-gradient(circle, var(--violet-aura) 0%, rgba(8, 6, 11, 0) 70%);
+      pointer-events: none;
+      z-index: 0;
+      filter: blur(100px);
+    }
+
+    .font-serif {
+      font-family: var(--font-serif);
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem 5rem 1.5rem;
+      position: relative;
+      z-index: 2;
+    }
+
+    .nav-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 0 2rem 0;
+      border-bottom: 1px solid var(--border-hairline);
+      margin-bottom: 3rem;
+    }
+
+    .nav-brand-link {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      text-decoration: none;
+      color: #ffffff;
+    }
+
+    .nav-brand-link:hover .nav-brand-text {
+      color: var(--primary-light);
+    }
+
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      padding: 0.5rem 1.2rem;
+      border-radius: 9999px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid var(--border-light);
+      transition: all 250ms var(--ease-smooth);
+    }
+
+    .back-btn:hover {
+      color: #ffffff;
+      background: rgba(112, 48, 160, 0.35);
+      border-color: rgba(240, 220, 255, 0.5);
+      transform: translateX(-3px);
+    }
+
+    .double-bezel {
+      background: radial-gradient(circle at top left, rgba(240, 220, 255, 0.06), rgba(255, 255, 255, 0.015) 80%);
+      border: 1px solid var(--border-hairline);
+      padding: 6px;
+      border-radius: 1.75rem;
+      box-shadow: 0 25px 50px -15px rgba(0, 0, 0, 0.8);
+      margin-bottom: 2rem;
+    }
+
+    .inner-core {
+      background: rgba(14, 9, 21, 0.85);
+      backdrop-filter: blur(20px);
+      border-radius: 1.4rem;
+      padding: clamp(1.75rem, 4vw, 2.75rem);
+    }
+
+    h1 {
+      font-size: clamp(2.2rem, 5vw, 3.2rem);
+      line-height: 1.1;
+      font-weight: 400;
+      color: #fff;
+      margin-bottom: 0.75rem;
+    }
+
+    h2 {
+      font-size: 1.35rem;
+      color: var(--primary-light);
+      margin-top: 2rem;
+      margin-bottom: 0.85rem;
+      font-weight: 500;
+    }
+
+    p {
+      color: var(--text-muted);
+      font-size: 0.98rem;
+      font-weight: 300;
+      margin-bottom: 1.25rem;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 1.5rem;
+    }
+
+    li {
+      position: relative;
+      padding-left: 1.5rem;
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      font-weight: 300;
+      margin-bottom: 0.65rem;
+    }
+
+    li::before {
+      content: '✦';
+      position: absolute;
+      left: 0;
+      color: var(--primary-light);
+      font-size: 0.8rem;
+    }
+
+    footer {
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      padding: 2.5rem 1.5rem;
+      text-align: center;
+      color: var(--text-subtle);
+      font-size: 0.825rem;
+      position: relative;
+      z-index: 2;
+    }
+  </style>
+</head>
+<body>
+
+  <div class=grain-overlay aria-hidden=true></div>
+  <div class=ambient-glow aria-hidden=true></div>
+
+  <main class=container>
+    
+    <!-- Top Bar Navigation -->
+    <header class=nav-header>
+      <a href=index.html class=nav-brand-link>
+        <span style=display: inline-block; width: 9px; height: 9px; border-radius: 50%; background: var(--primary-light); box-shadow: 0 0 10px var(--primary-light);></span>
+        <span class=font-serif nav-brand-text style=font-size: 1.2rem; font-weight: 600; letter-spacing: 0.04em;>VANINA K VALLEJOS</span>
+      </a>
+
+      <a href=index.html class=back-btn>
+        <span>← Volver al Inicio</span>
+      </a>
+    </header>
+
+    <!-- Main Content Card -->
+    <article class=double-bezel>
+      <div class=inner-core>
+        
+        <div style=font-size: 0.75rem; color: var(--primary-light); text-transform: uppercase; letter-spacing: 0.15em; font-weight: 600; margin-bottom: 0.5rem;>
+          Transparencia, Ética & Confianza
+        </div>
+
+        <h1 class=font-serif>
+          Políticas de <span style=font-style: italic; color: var(--primary-light);>Privacidad</span> & Confidencialidad
+        </h1>
+
+        <p style=font-size: 0.875rem; color: var(--text-subtle); margin-bottom: 2rem;>
+          Última actualización: Agosto 2026
+        </p>
+
+        <p>
+          En el espacio de <strong>Vanina K Vallejos</strong> (Consciencia, Espiritualidad & Bienestar Holístico), la privacidad, la ética terapéutica y la confidencialidad sagrada de cada persona que confía en nuestros servicios son pilares fundamentales de nuestro trabajo.
+        </p>
+
+        <h2>1. Información que Recopilamos</h2>
+        <p>
+          A través de este sitio web y de nuestros canales oficiales de contacto, podemos recopilar únicamente la información necesaria para brindarte una atención personalizada:
+        </p>
+        <ul>
+          <li><strong>Suscripción al Círculo de Consciencia:</strong> Nombre completo y dirección de correo electrónico provistos voluntariamente a través del formulario.</li>
+          <li><strong>Consultas y Coordinación de Sesiones:</strong> Datos de contacto (como número de WhatsApp y nombre) que compartís al iniciar una conversación para agendar lecturas o formaciones.</li>
+          <li><strong>Interacción en Sesiones:</strong> Los motivos de consulta, historias familiares o reflexiones compartidas durante los encuentros terapéuticos se tratan bajo el más estricto secreto profesional y no son almacenados en bases de datos externas.</li>
+        </ul>
+
+        <h2>2. Uso y Finalidad de los Datos</h2>
+        <p>Tus datos personales son utilizados exclusivamente para:</p>
+        <ul>
+          <li>Enviarte reflexiones, lecturas arquetípicas y novedades de cursos a través de nuestro boletín de noticias (únicamente si te suscribiste expresamente).</li>
+          <li>Responder a tus consultas de disponibilidad y coordinar tus sesiones individuales o talleres vivenciales.</li>
+          <li>Garantizar una experiencia de navegación fluida, segura y personalizada en nuestro sitio.</li>
+        </ul>
+
+        <h2>3. Confidencialidad Sagrada & No Divulgación</h2>
+        <p>
+          <strong>Bajo ninguna circunstancia vendemos, alquilamos, comercializamos ni cedemos tus datos personales o de contacto a terceros.</strong> Toda la información compartida en el marco de sesiones de Tarot Terapéutico, Biodecodificación, Psicogenealogía, Constelaciones o Limpiezas Energéticas queda resguardada bajo confidencialidad absoluta y respeto ético total.
+        </p>
+
+        <h2>4. Plataformas de Terceros y Servicios de Envío</h2>
+        <p>
+          Para la gestión técnica del correo electrónico y el boletín informativo, utilizamos plataformas de automatización con altos estándares de seguridad (como Brevo / FormSubmit). Estas plataformas procesan los datos con cifrado y únicamente con la finalidad técnica de enviar los correos solicitados.
+        </p>
+
+        <h2>5. Tus Derechos de Control y Baja</h2>
+        <p>
+          Tenés el derecho pleno de acceder, rectificar o solicitar la eliminación total de tus datos de nuestra lista de correo en cualquier momento:
+        </p>
+        <ul>
+          <li>Podés hacer clic en el enlace de <em>Desuscribirme (Unsubscribe)</em> al pie de cualquiera de nuestros correos electrónicos.</li>
+          <li>O podés escribirnos directamente a nuestro correo oficial <strong>vanikvallejos@gmail.com</strong> solicitando la baja definitiva.</li>
+        </ul>
+
+        <h2>6. Enlaces a Redes Sociales</h2>
+        <p>
+          Nuestro sitio web contiene enlaces directos a canales oficiales (Instagram, TikTok, Spotify y YouTube). Al interactuar con dichas plataformas externas, rigen las políticas de privacidad propias de cada una de esas redes.
+        </p>
+
+        <h2>7. Contacto Directo</h2>
+        <p>
+          Si tenés alguna inquietud, pregunta o sugerencia respecto a nuestras políticas de privacidad y resguardo de datos, podés comunicarte directamente con nosotros vía correo electrónico a <strong style=color: #fff;>vanikvallejos@gmail.com</strong> o mediante nuestro WhatsApp oficial.
+        </p>
+
+        <div style=margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--border-light); text-align: center;>
+          <a href=index.html class=back-btn style=padding: 0.65rem 1.6rem; font-size: 0.95rem;>
+            <span>← Regresar a la Página Principal</span>
+          </a>
+        </div>
+
+      </div>
+    </article>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div style=max-width: 860px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1rem;>
+      <div>© 2026 Vanina K Vallejos. Todos los derechos reservados.</div>
+      <div style=color: var(--primary-light);>Espacio Sagrado de Transformación & Consciencia ✦</div>
+    </div>
+  </footer>
+
+</body>
+</html>

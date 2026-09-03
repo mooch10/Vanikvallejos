@@ -1,0 +1,2623 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Vanina K Vallejos | Consciencia, Espiritualidad & Bienestar Holístico</title>
+  <meta name="description" content="Espacio sagrado de transformación personal: Tarot evolutivo, Meditación, Biodecodificación, Limpiezas Energéticas y Formaciones con Vanina K Vallejos." />
+  
+  <!-- AI Agents & LLM Discovery Standard -->
+  <link rel="llms-txt" type="text/markdown" href="/llms.txt" />
+  
+  <!-- Open Graph / Social Media Preview -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Vanina K Vallejos | Consciencia, Espiritualidad & Bienestar Holístico" />
+  <meta property="og:description" content="Espacio sagrado de transformación personal: Tarot evolutivo, Meditación, Biodecodificación, Limpiezas Energéticas y Formaciones con Vanina K Vallejos." />
+  <meta property="og:image" content="assets/images/portrait.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Vanina K Vallejos | Consciencia & Bienestar Holístico" />
+  <meta name="twitter:description" content="Espacio sagrado de transformación personal: Tarot evolutivo, Meditación y Biodecodificación." />
+  <meta name="twitter:image" content="assets/images/portrait.jpg" />
+  
+  <!-- Sacred Mystical Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2308060b'/%3E%3Cpath d='M16 4 C16 10 22 16 28 16 C22 16 16 22 16 28 C16 22 10 16 4 16 C10 16 16 10 16 4 Z' fill='%23f0dcff'/%3E%3Ccircle cx='16' cy='16' r='3' fill='%237030a0'/%3E%3C/svg%3E" />
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,600&family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    html {
+      scroll-behavior: smooth !important;
+    }
+
+    /* Fixed header scroll offset */
+    section[id], footer[id] {
+      scroll-margin-top: 6.5rem;
+    }
+
+    /* =========================================================================
+       DESIGN SYSTEM & CSS VARIABLES
+       Paleta Mística: #f0dcff (Lavanda / Rosita Luz) & #7030a0 (Púrpura Profundo)
+       ========================================================================= */
+    :root {
+      --bg-dark: #08060b;
+      --bg-deep: #100b17;
+      --bg-card: rgba(22, 16, 32, 0.65);
+      --bg-card-hover: rgba(32, 22, 48, 0.85);
+      
+      /* User Color Palette */
+      --primary-light: #f0dcff;
+      --primary-accent: #7030a0;
+      --primary-accent-glow: rgba(112, 48, 160, 0.35);
+      --primary-light-dim: rgba(240, 220, 255, 0.15);
+      
+      --lavender-glow: rgba(112, 48, 160, 0.45);
+      --violet-aura: rgba(168, 85, 247, 0.18);
+      
+      --text-main: #f5f0fb;
+      --text-muted: #c8bdde;
+      --text-subtle: #9d8db8;
+      
+      --border-hairline: rgba(240, 220, 255, 0.16);
+      --border-accent: rgba(112, 48, 160, 0.5);
+      --border-light: rgba(255, 255, 255, 0.08);
+      
+      --font-serif: 'Cormorant Garamond', Georgia, serif;
+      --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      
+      --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+      --ease-smooth: cubic-bezier(0.16, 1, 0.3, 1);
+      --ease-spring: cubic-bezier(0.32, 0.72, 0, 1);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      font-family: var(--font-sans);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      overflow-x: hidden;
+    }
+
+    ::selection {
+      background: var(--primary-accent);
+      color: #fff;
+    }
+
+    /* Subtle Film Grain */
+    .grain-overlay {
+      position: fixed;
+      inset: 0;
+      width: 100vw;
+      height: 100vh;
+      pointer-events: none;
+      z-index: 99;
+      opacity: 0.025;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    }
+
+    /* Ambient Glowing Orbs */
+    .ambient-glow-1 {
+      position: fixed;
+      top: -15vw;
+      left: 10vw;
+      width: 55vw;
+      height: 55vw;
+      border-radius: 50%;
+      background: radial-gradient(circle, var(--lavender-glow) 0%, rgba(8, 6, 11, 0) 70%);
+      pointer-events: none;
+      z-index: 0;
+      filter: blur(90px);
+      animation: floatAura 24s ease-in-out infinite alternate;
+    }
+
+    .ambient-glow-2 {
+      position: fixed;
+      bottom: 10vh;
+      right: -10vw;
+      width: 55vw;
+      height: 55vw;
+      border-radius: 50%;
+      background: radial-gradient(circle, var(--violet-aura) 0%, rgba(8, 6, 11, 0) 70%);
+      pointer-events: none;
+      z-index: 0;
+      filter: blur(90px);
+      animation: floatAura 30s ease-in-out infinite alternate-reverse;
+    }
+
+    @keyframes floatAura {
+      0% { transform: translate(0, 0) scale(1); }
+      50% { transform: translate(4vw, 5vh) scale(1.1); }
+      100% { transform: translate(-3vw, -4vh) scale(0.95); }
+    }
+
+    /* Typography Utilities */
+    .font-serif {
+      font-family: var(--font-serif);
+    }
+    .font-sans {
+      font-family: var(--font-sans);
+    }
+    .text-highlight {
+      color: var(--primary-accent);
+      font-weight: 600;
+    }
+
+    /* React Bits Signature: ShinyText (Sweeping Light Beam Animation) */
+    .shiny-text {
+      background: linear-gradient(120deg, rgba(255, 255, 255, 0.45) 0%, rgba(240, 220, 255, 1) 35%, rgba(255, 255, 255, 0.95) 50%, rgba(240, 220, 255, 1) 65%, rgba(255, 255, 255, 0.45) 100%);
+      background-size: 200% auto;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: shineSweep 4.5s ease-in-out infinite;
+      display: inline-block;
+    }
+
+    @keyframes shineSweep {
+      0% { background-position: 180% 0; }
+      50% { background-position: -180% 0; }
+      100% { background-position: 180% 0; }
+    }
+
+    /* React Bits Signature: TiltedCard (3D Perspective Parallax) */
+    .tilted-card-container {
+      perspective: 1000px;
+      transform-style: preserve-3d;
+    }
+
+    .tilted-card {
+      transition: transform 150ms var(--ease-out), box-shadow 300ms var(--ease-out);
+      will-change: transform;
+    }
+
+    /* React Bits Signature: BorderGlow Spotlight */
+    .double-bezel:hover {
+      border-color: rgba(240, 220, 255, 0.45);
+      box-shadow: 0 35px 70px -15px rgba(0, 0, 0, 0.9), 0 0 35px rgba(168, 85, 247, 0.25), inset 0 0 20px rgba(112, 48, 160, 0.2);
+    }
+
+    /* React Bits Signature: CircularText (Rotating Sacred Stamp) */
+    .circular-stamp {
+      position: absolute;
+      bottom: -1.5rem;
+      right: -1.5rem;
+      width: 105px;
+      height: 105px;
+      z-index: 10;
+      pointer-events: none;
+    }
+
+    .circular-stamp-svg {
+      width: 100%;
+      height: 100%;
+      animation: rotateStamp 22s linear infinite;
+    }
+
+    @keyframes rotateStamp {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    /* React Bits Signature: FaqAccordion Styles */
+    .faq-item {
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      transition: max-height 450ms var(--ease-out), opacity 400ms var(--ease-out), padding 400ms var(--ease-out);
+    }
+
+    .faq-item.is-active .faq-answer {
+      max-height: 300px;
+      opacity: 1;
+      padding-top: 1rem;
+    }
+
+    .faq-icon {
+      transition: transform 350ms var(--ease-spring);
+    }
+
+    .faq-item.is-active .faq-icon {
+      transform: rotate(135deg);
+      color: var(--primary-light);
+    }
+
+    /* React Bits Signature: DecayCard / ElasticCards (Spring Decay & Bounce Physics) */
+    .elastic-card {
+      transform-style: preserve-3d;
+      transition: transform 140ms var(--ease-out), box-shadow 300ms var(--ease-out);
+      will-change: transform;
+    }
+
+    .elastic-card.elastic-snap {
+      transition: transform 650ms cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+      transform: translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1) !important;
+    }
+
+    /* React Bits Signature: Floating Constellation Engine CSS */
+    .constellation-wrapper {
+      position: relative;
+      min-height: 480px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 2rem;
+    }
+
+    .constellation-core {
+      position: relative;
+      z-index: 10;
+      width: 230px;
+      height: 230px;
+      border-radius: 50%;
+      background: radial-gradient(circle at center, rgba(112, 48, 160, 0.55) 0%, rgba(22, 14, 34, 0.96) 75%);
+      border: 1px solid rgba(240, 220, 255, 0.45);
+      box-shadow: 0 0 50px rgba(168, 85, 247, 0.4), inset 0 0 30px rgba(240, 220, 255, 0.25);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 1.5rem;
+      backdrop-filter: blur(20px);
+      transition: all 400ms var(--ease-spring);
+    }
+
+    .constellation-core:hover {
+      box-shadow: 0 0 75px rgba(240, 220, 255, 0.7), inset 0 0 45px rgba(168, 85, 247, 0.5);
+      transform: scale(1.05);
+    }
+
+    .constellation-nodes-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      align-items: center;
+      max-width: 900px;
+      margin: 0 auto;
+      z-index: 12;
+      position: relative;
+    }
+
+    .orbit-node {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.65rem;
+      padding: 0.85rem 1.4rem;
+      border-radius: 9999px;
+      background: rgba(18, 12, 28, 0.85);
+      border: 1px solid rgba(240, 220, 255, 0.25);
+      backdrop-filter: blur(16px);
+      color: #fff;
+      font-size: 0.9375rem;
+      font-weight: 500;
+      cursor: pointer;
+      user-select: none;
+      transition: all 350ms var(--ease-spring);
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.7);
+      animation: floatOrbit 5.5s ease-in-out infinite alternate;
+    }
+
+    .orbit-node:nth-child(2n) { animation-delay: -1.2s; }
+    .orbit-node:nth-child(3n) { animation-delay: -2.5s; }
+    .orbit-node:nth-child(4n) { animation-delay: -3.8s; }
+
+    @keyframes floatOrbit {
+      0% { transform: translateY(0px) rotate(0deg); }
+      100% { transform: translateY(-8px) rotate(1.2deg); }
+    }
+
+    .orbit-node:hover,
+    .orbit-node.is-active {
+      background: rgba(112, 48, 160, 0.5);
+      border-color: rgba(240, 220, 255, 0.8);
+      box-shadow: 0 0 30px rgba(240, 220, 255, 0.6), 0 15px 35px rgba(168, 85, 247, 0.45);
+      color: #ffffff;
+      transform: translateY(-6px) scale(1.06) !important;
+    }
+
+    /* Metallic Emerald Glow Effect for WhatsApp PNG Icon */
+    .whatsapp-glow-img {
+      display: block;
+      filter: drop-shadow(0 0 6px rgba(37, 211, 102, 0.75)) drop-shadow(0 0 14px rgba(37, 211, 102, 0.4));
+      transition: filter 300ms var(--ease-smooth), transform 300ms var(--ease-smooth);
+    }
+    .btn-island:hover .whatsapp-glow-img {
+      filter: drop-shadow(0 0 10px rgba(37, 211, 102, 1)) drop-shadow(0 0 22px rgba(37, 211, 102, 0.7)) brightness(1.12);
+      transform: scale(1.1);
+    }
+
+    /* React Bits Signature: Header Nav Floating Island with BorderBeam & ShrinkGlass */
+    .nav-island {
+      position: fixed;
+      top: 1.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 80;
+      background: rgba(16, 11, 23, 0.78);
+      backdrop-filter: blur(24px) saturate(180%);
+      -webkit-backdrop-filter: blur(24px) saturate(180%);
+      border: 1px solid rgba(240, 220, 255, 0.2);
+      border-radius: 9999px;
+      padding: 0.45rem 0.6rem 0.45rem 1.4rem;
+      box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.8), inset 0 1px 1px rgba(255, 255, 255, 0.15);
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      transition: padding 350ms var(--ease-smooth), background 350ms var(--ease-smooth), transform 350ms var(--ease-smooth), box-shadow 350ms var(--ease-smooth), border-color 350ms var(--ease-smooth);
+      width: max-content;
+      max-width: calc(100vw - 2rem);
+      overflow: hidden;
+    }
+
+
+
+    /* React Bits Signature: ShrinkGlassOnScroll */
+    .nav-island.is-shrunk {
+      top: 1rem;
+      padding: 0.32rem 0.5rem 0.32rem 1.15rem;
+      background: rgba(8, 5, 13, 0.92);
+      backdrop-filter: blur(32px) saturate(200%);
+      border-color: rgba(240, 220, 255, 0.35);
+      box-shadow: 0 25px 50px -10px rgba(0, 0, 0, 0.95), 0 0 20px rgba(168, 85, 247, 0.2), inset 0 1px 1px rgba(255, 255, 255, 0.2);
+      transform: translateX(-50%) scale(0.97);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+      list-style: none;
+      position: relative;
+      padding: 0.25rem;
+    }
+
+    /* React Bits Signature: SlidingPill Active Tab Indicator */
+    .nav-sliding-pill {
+      position: absolute;
+      height: 32px;
+      border-radius: 9999px;
+      background: rgba(112, 48, 160, 0.32);
+      box-shadow: 0 0 16px rgba(168, 85, 247, 0.45), inset 0 0 10px rgba(240, 220, 255, 0.3);
+      border: 1px solid rgba(240, 220, 255, 0.4);
+      transition: left 320ms var(--ease-spring), width 320ms var(--ease-spring), opacity 200ms ease;
+      pointer-events: none;
+      z-index: 1;
+      opacity: 0;
+    }
+
+    .nav-link {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.875rem;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      transition: color 200ms var(--ease-out);
+      position: relative;
+      padding: 0.35rem 0.85rem;
+      border-radius: 9999px;
+      z-index: 2;
+    }
+
+    .nav-link.active {
+      color: #ffffff !important;
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 50%;
+      transform: translateX(-50%) scaleX(0);
+      width: 14px;
+      height: 2px;
+      background: var(--primary-light);
+      border-radius: 9999px;
+      box-shadow: 0 0 10px var(--primary-light);
+      transition: transform 250ms var(--ease-spring);
+    }
+
+    .nav-link.active,
+    .nav-link:hover {
+      color: var(--primary-light);
+    }
+
+    .nav-link.active::after,
+    .nav-link:hover::after {
+      transform: translateX(-50%) scaleX(1);
+    }
+
+    /* Double Bezel Card Component with Mouse Spotlight */
+    .double-bezel {
+      background: radial-gradient(450px circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(240, 220, 255, 0.12), rgba(255, 255, 255, 0.025) 80%);
+      border: 1px solid var(--border-hairline);
+      padding: 6px;
+      border-radius: 2rem;
+      box-shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.8);
+      position: relative;
+      transition: transform 300ms var(--ease-spring), border-color 300ms var(--ease-out), box-shadow 300ms var(--ease-out);
+    }
+
+    .double-bezel:hover {
+      border-color: rgba(240, 220, 255, 0.35);
+      box-shadow: 0 35px 70px -15px rgba(0, 0, 0, 0.9), 0 0 30px rgba(112, 48, 160, 0.18);
+      transform: translateY(-4px);
+    }
+
+    .inner-core {
+      background: linear-gradient(165deg, rgba(25, 17, 36, 0.85) 0%, rgba(14, 9, 21, 0.95) 100%);
+      border: 1px solid var(--border-light);
+      border-radius: calc(2rem - 6px);
+      box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.08);
+      padding: 2.25rem;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    /* =========================================================================
+       PERFECTED ISLAND BUTTON COMPONENT (Proporciones Óptimas & Cohesivas)
+       ========================================================================= */
+    .btn-island {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.55rem;
+      background: linear-gradient(135deg, #ffffff 0%, var(--primary-light) 65%, #ebd1ff 100%);
+      color: #170b22;
+      font-family: var(--font-sans);
+      font-weight: 600;
+      font-size: 0.9375rem;
+      text-decoration: none;
+      padding: 0.35rem 0.45rem 0.35rem 0.45rem;
+      border-radius: 9999px;
+      box-shadow: 0 10px 25px -5px rgba(112, 48, 160, 0.35), inset 0 1px 1px rgba(255, 255, 255, 0.8);
+      transition: transform 160ms var(--ease-out), box-shadow 200ms var(--ease-out), filter 200ms var(--ease-out);
+      cursor: pointer;
+      border: none;
+    }
+
+    .btn-island:hover {
+      filter: brightness(1.03);
+      box-shadow: 0 14px 30px -4px rgba(112, 48, 160, 0.5), 0 0 20px rgba(240, 220, 255, 0.3);
+    }
+
+    .btn-island:active {
+      transform: scale(0.97);
+    }
+
+    /* Modern Icon Badge (Left container - WhatsApp/MessageCircle & Arrows) */
+    .btn-badge-icon {
+      width: 2.3rem;
+      height: 2.3rem;
+      border-radius: 50%;
+      background: rgba(112, 48, 160, 0.12);
+      color: var(--primary-accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      transition: transform 250ms var(--ease-spring), background 200ms var(--ease-out), color 200ms var(--ease-out);
+    }
+
+    .btn-badge-icon.whatsapp-accent {
+      background: rgba(37, 211, 102, 0.14);
+      color: #17a44c;
+    }
+
+    .btn-island:hover .btn-badge-icon.whatsapp-accent {
+      background: rgba(37, 211, 102, 0.24);
+      transform: scale(1.05);
+    }
+
+    .btn-island:hover .btn-badge-icon {
+      transform: scale(1.05);
+    }
+
+    /* Trailing Action Circle (Right icon) */
+    .btn-icon-circle {
+      width: 2.3rem;
+      height: 2.3rem;
+      border-radius: 50%;
+      background: rgba(112, 48, 160, 0.12);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--primary-accent);
+      flex-shrink: 0;
+      transition: transform 250ms var(--ease-spring), background 200ms var(--ease-out);
+    }
+
+    .btn-island:hover .btn-icon-circle {
+      transform: translateX(2px) translateY(-1px) scale(1.05);
+      background: rgba(112, 48, 160, 0.22);
+    }
+
+    /* Button Text Label Alignment */
+    .btn-label-text {
+      padding: 0 0.25rem 0 0.1rem;
+      letter-spacing: -0.01em;
+      white-space: nowrap;
+    }
+
+    /* Secondary Button Variant */
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.05);
+      color: var(--text-main);
+      border: 1px solid var(--border-hairline);
+      box-shadow: 0 8px 20px -6px rgba(0, 0, 0, 0.5);
+      padding: 0.35rem 0.45rem 0.35rem 1.25rem;
+    }
+
+    .btn-secondary:hover {
+      background: rgba(240, 220, 255, 0.1);
+      border-color: rgba(240, 220, 255, 0.4);
+      color: var(--primary-light);
+      box-shadow: 0 10px 25px -4px rgba(0, 0, 0, 0.7);
+    }
+
+    .btn-secondary .btn-icon-circle {
+      background: rgba(255, 255, 255, 0.08);
+      color: var(--primary-light);
+    }
+
+    .btn-secondary:hover .btn-icon-circle {
+      background: var(--primary-light);
+      color: #170b22;
+    }
+
+    /* Eyebrow Micro-Badge */
+    .eyebrow-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.35rem 0.95rem;
+      border-radius: 9999px;
+      background: rgba(112, 48, 160, 0.18);
+      border: 1px solid rgba(240, 220, 255, 0.28);
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.22em;
+      color: var(--primary-light);
+      font-weight: 600;
+      margin-bottom: 1.25rem;
+    }
+
+    .pulse-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--primary-light);
+      box-shadow: 0 0 10px var(--primary-light);
+      animation: microPulse 2.5s infinite ease-in-out;
+    }
+
+    @keyframes microPulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(0.75); }
+    }
+
+    /* Scroll Observer Fade Up */
+    .reveal-on-scroll {
+      opacity: 0;
+      transform: translateY(32px);
+      transition: opacity 800ms var(--ease-smooth), transform 800ms var(--ease-smooth);
+      will-change: opacity, transform;
+    }
+
+    .reveal-on-scroll.is-revealed {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Container Standard */
+    .container-wide {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* Hero Sacred Portal */
+    .hero-section {
+      min-height: 100dvh;
+      position: relative;
+      display: flex;
+      align-items: center;
+      padding: 8rem 0 5rem 0;
+      overflow: hidden;
+    }
+
+    .hero-bg-media {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      opacity: 0.32;
+      filter: saturate(1.1) brightness(0.85);
+      mask-image: radial-gradient(circle at center, black 40%, transparent 85%);
+      -webkit-mask-image: radial-gradient(circle at center, black 40%, transparent 85%);
+    }
+
+    .hero-vignette {
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+      background: radial-gradient(ellipse at center, rgba(8, 6, 11, 0.4) 0%, rgba(8, 6, 11, 0.95) 85%);
+      pointer-events: none;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 10;
+      max-width: 860px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    /* Bento Grid Features */
+    .bento-grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 1.5rem;
+    }
+
+    /* Interactive Energy Oracle Tab Widget */
+    .oracle-pill {
+      cursor: pointer;
+      padding: 0.75rem 1.4rem;
+      border-radius: 9999px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--border-light);
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      font-weight: 500;
+      transition: all 250ms var(--ease-out);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .oracle-pill.active {
+      background: rgba(112, 48, 160, 0.3);
+      border-color: var(--primary-light);
+      color: var(--primary-light);
+      box-shadow: 0 0 20px rgba(112, 48, 160, 0.35);
+    }
+
+
+
+    /* Mobile Hamburger Overlay */
+    .mobile-menu-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(8, 6, 11, 0.98);
+      backdrop-filter: blur(36px);
+      -webkit-backdrop-filter: blur(36px);
+      z-index: 999;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem 1.5rem;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 300ms var(--ease-smooth);
+    }
+
+    .mobile-menu-overlay.is-open {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .mobile-menu-links {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      text-align: center;
+      list-style: none;
+    }
+
+    .mobile-nav-link {
+      font-family: var(--font-serif);
+      font-size: 2.25rem;
+      color: var(--text-main);
+      text-decoration: none;
+      transition: color 200ms var(--ease-out), transform 200ms var(--ease-out);
+    }
+
+    .mobile-nav-link:hover {
+      color: var(--primary-light);
+      transform: scale(1.05);
+    }
+
+    /* Responsive Queries */
+    @media (max-width: 1024px) {
+      .bento-col-8 { grid-column: span 12 !important; }
+      .bento-col-4 { grid-column: span 12 !important; }
+      .bento-col-6 { grid-column: span 12 !important; }
+      .bento-col-3 { grid-column: span 6 !important; }
+      .about-portrait-col { grid-column: span 12 !important; max-width: 440px; margin: 0 auto 2rem auto; }
+      .about-narrative-col { grid-column: span 12 !important; }
+    }
+
+    @media (max-width: 768px) {
+      /* Navigation Island Mobile Fitting */
+      .nav-links { display: none !important; }
+      .nav-island { 
+        padding: 0.35rem 0.5rem 0.35rem 0.9rem !important; 
+        width: calc(100vw - 1.25rem) !important; 
+        max-width: 100% !important;
+        justify-content: space-between !important; 
+        top: 0.75rem !important;
+        gap: 0.5rem !important;
+      }
+      .nav-brand-text {
+        font-size: 0.95rem !important;
+      }
+      .nav-cta-btn .btn-label-text {
+        display: none !important; /* Hide long text on mobile to avoid overcrowding the nav bar */
+      }
+      .nav-cta-btn {
+        padding: 0 !important;
+        width: 2.35rem !important;
+        height: 2.35rem !important;
+        border-radius: 50% !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        flex-shrink: 0 !important;
+      }
+      .nav-cta-btn .btn-badge-icon {
+        width: 100% !important;
+        height: 100% !important;
+        margin: 0 !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        background: transparent !important;
+      }
+      .nav-cta-btn .btn-icon-circle {
+        display: none !important;
+      }
+      .nav-island.is-shrunk {
+        top: 0.4rem !important;
+        transform: translateX(-50%) scale(0.99) !important;
+      }
+      .bento-col-3 { grid-column: span 12 !important; }
+      .mobile-toggle { display: flex !important; }
+      
+      /* Typography & Headings Balance */
+      h1 { font-size: clamp(2.1rem, 8.5vw, 3.2rem) !important; }
+      h2 { font-size: clamp(1.85rem, 6.5vw, 2.6rem) !important; }
+      
+      /* Sections Vertical Spacing */
+      section { padding: 4.5rem 0 !important; }
+      .hero-section { min-height: 90vh !important; padding-top: 6.5rem !important; padding-bottom: 3.5rem !important; }
+      
+      /* Buttons and Touch Targets */
+      .btn-island {
+        font-size: 0.9rem !important;
+        padding: 0.35rem 0.5rem !important;
+        max-width: 100% !important;
+        width: auto !important;
+        justify-content: space-between !important;
+      }
+      .btn-label-text {
+        font-size: 0.875rem !important;
+        white-space: normal !important;
+        text-align: center !important;
+        line-height: 1.25 !important;
+        padding: 0 0.4rem !important;
+      }
+      .btn-badge-icon {
+        width: 2.1rem !important;
+        height: 2.1rem !important;
+        flex-shrink: 0 !important;
+      }
+      .btn-icon-circle {
+        width: 2.1rem !important;
+        height: 2.1rem !important;
+        flex-shrink: 0 !important;
+      }
+      
+      /* Footer Grid Responsive Stack */
+      .footer-brand-col { grid-column: span 12 !important; margin-bottom: 2rem !important; }
+      .footer-links-col { grid-column: span 12 !important; }
+      .footer-social-cards-grid { grid-template-columns: 1fr !important; }
+      
+      /* Constellation Interactive Node Pills on Mobile */
+      .constellation-nodes-container {
+        gap: 0.6rem !important;
+      }
+      .orbit-node {
+        padding: 0.65rem 1.1rem !important;
+        font-size: 0.85rem !important;
+        animation: none !important; /* Disable continuous floating on touch to avoid hit target drift */
+      }
+      
+      /* Subscription Form Responsive Stack */
+      #subscribeForm {
+        flex-direction: column !important;
+        width: 100% !important;
+      }
+      #subscribeForm input {
+        width: 100% !important;
+        flex: none !important;
+      }
+      #subscribeForm button {
+        width: 100% !important;
+        justify-content: center !important;
+      }
+      
+      /* Footer */
+      footer { padding-bottom: 4rem !important; }
+      
+      /* Mobile Menu Sheet */
+      .mobile-menu-links {
+        gap: 1.4rem !important;
+      }
+      .mobile-nav-link {
+        font-size: 1.65rem !important;
+      }
+      /* Constellation Views Switching: Mobile Grid vs Desktop Orbit Matrix */
+      .constellation-desktop-view {
+        display: none !important;
+      }
+      .constellation-mobile-view {
+        display: grid !important;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .container-wide {
+        padding: 0 1rem !important;
+      }
+      .inner-core {
+        padding: 1.5rem 1.25rem !important;
+      }
+      .circular-stamp {
+        width: 80px !important;
+        height: 80px !important;
+        top: -15px !important;
+        right: -15px !important;
+      }
+      .oracle-pill {
+        padding: 0.5rem 0.9rem !important;
+        font-size: 0.8rem !important;
+      }
+    }
+
+    @media (min-width: 769px) {
+      .mobile-toggle { display: none !important; }
+      .constellation-desktop-view {
+        display: block !important;
+      }
+      .constellation-mobile-view {
+        display: none !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Ambient Atmosphere -->
+  <div class="grain-overlay" aria-hidden="true"></div>
+  <div class="ambient-glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow-2" aria-hidden="true"></div>
+  <!-- React Bits Signature: Cosmic Particles Canvas -->
+  <canvas id="reactBitsParticles" style="position: fixed; inset: 0; width: 100vw; height: 100vh; pointer-events: none; z-index: 1; opacity: 0.95;" aria-hidden="true"></canvas>
+
+  <!-- =========================================================================
+       NAVIGATION: Floating Frosted Glass Island
+       ========================================================================= -->
+  <header>
+    <nav class="nav-island" aria-label="Navegación principal">
+      <a href="#inicio" class="nav-brand" style="display: flex; align-items: center; gap: 0.6rem; text-decoration: none; flex-shrink: 0;">
+        <span style="display: inline-block; width: 9px; height: 9px; border-radius: 50%; background: var(--primary-light); box-shadow: 0 0 12px var(--primary-light); flex-shrink: 0;"></span>
+        <span class="font-serif nav-brand-text" style="font-size: 1.15rem; font-weight: 600; color: #fff; letter-spacing: 0.03em; white-space: nowrap;">VANINA K VALLEJOS</span>
+      </a>
+
+      <ul class="nav-links">
+        <div id="navSlidingPill" class="nav-sliding-pill"></div>
+        <li><a href="#pilares" class="nav-link">Pilares</a></li>
+        <li><a href="#servicios" class="nav-link">Servicios & Sesiones</a></li>
+        <li><a href="#testimonios" class="nav-link">Testimonios</a></li>
+        <li><a href="#formacion" class="nav-link">Formación & Autoridad</a></li>
+        <li><a href="#faq" class="nav-link">Preguntas Frecuentes</a></li>
+        <li><a href="#comunidad" class="nav-link">Comunidad</a></li>
+      </ul>
+
+      <div class="nav-actions" style="display: flex; align-items: center; gap: 0.5rem; flex-shrink: 0;">
+        <a href="https://wa.me/5492915279198?text=Hola%20Vanina,%20deseo%20agendar%20una%20sesi%C3%B3n" target="_blank" rel="noopener noreferrer" class="btn-island nav-cta-btn" style="font-size: 0.8125rem;">
+          <div class="btn-badge-icon whatsapp-accent" style="width: 2rem; height: 2rem;">
+            <img src="assets/images/whatsapp-icon.png" width="18" height="18" alt="WhatsApp" class="whatsapp-glow-img" />
+          </div>
+          <span class="btn-label-text">Agendar Sesión</span>
+          <span class="btn-icon-circle" style="width: 2rem; height: 2rem;">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="7" y1="17" x2="17" y2="7"></line>
+              <polyline points="7 7 17 7 17 17"></polyline>
+            </svg>
+          </span>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobileMenuBtn" class="mobile-toggle" aria-label="Abrir menú" style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-light); border-radius: 50%; width: 2.25rem; height: 2.25rem; color: #fff; display: flex; align-items: center; justify-content: center; cursor: pointer;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Menu Screen -->
+  <div id="mobileMenu" class="mobile-menu-overlay">
+    <button id="closeMobileMenu" style="position: absolute; top: 2rem; right: 2rem; background: rgba(255,255,255,0.08); border: 1px solid var(--border-light); border-radius: 50%; width: 3rem; height: 3rem; color: #fff; display: flex; align-items: center; justify-content: center; cursor: pointer;">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
+    </button>
+    <ul class="mobile-menu-links">
+      <li><a href="#inicio" class="mobile-nav-link">Inicio</a></li>
+      <li><a href="#pilares" class="mobile-nav-link">Pilares Esenciales</a></li>
+      <li><a href="#servicios" class="mobile-nav-link">Servicios & Cursos</a></li>
+      <li><a href="#testimonios" class="mobile-nav-link">Testimonios</a></li>
+      <li><a href="#formacion" class="mobile-nav-link">Formación Profesional</a></li>
+      <li><a href="#faq" class="mobile-nav-link">Preguntas Frecuentes</a></li>
+      <li><a href="#comunidad" class="mobile-nav-link">Comunidad & Redes</a></li>
+    </ul>
+    <div style="margin-top: 3rem;">
+      <a href="https://wa.me/5492915279198?text=Hola%20Vanina,%20deseo%20agendar%20una%20sesi%C3%B3n" target="_blank" rel="noopener noreferrer" class="btn-island">
+        <div class="btn-badge-icon whatsapp-accent">
+          <img src="assets/images/whatsapp-icon.png" width="20" height="20" alt="WhatsApp" class="whatsapp-glow-img" />
+        </div>
+        <span class="btn-label-text">Agendar sesión por WhatsApp</span>
+        <span class="btn-icon-circle">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="7" y1="17" x2="17" y2="7"></line>
+            <polyline points="7 7 17 7 17 17"></polyline>
+          </svg>
+        </span>
+      </a>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       HERO SECTION: Sacred Energy Portal
+       ========================================================================= -->
+  <section id="inicio" class="hero-section">
+    <img src="assets/images/hero-bg.jpg" alt="Portal energético sagrado" class="hero-bg-media" fetchpriority="high" decoding="async" />
+    <div class="hero-vignette"></div>
+
+    <div class="container-wide" style="width: 100%;">
+      <div class="hero-content">
+        
+        <div class="eyebrow-badge reveal-on-scroll">
+          <span class="pulse-dot"></span>
+          <span class="shiny-text">Espacio Sagrado de Elevación & Claridad</span>
+        </div>
+
+        <h1 class="font-serif reveal-on-scroll" style="font-size: clamp(2.75rem, 7vw, 5.5rem); font-weight: 400; line-height: 1.04; letter-spacing: -0.02em; margin-bottom: 1.5rem; text-shadow: 0 10px 30px rgba(0,0,0,0.8);">
+          Despertá tu <span class="shiny-text" style="font-style: italic;">Consciencia</span>.<br/>
+          Abrazá tu Plenitud de Vida.
+        </h1>
+
+        <p class="reveal-on-scroll" style="font-size: clamp(1.05rem, 2vw, 1.25rem); color: var(--text-muted); max-width: 680px; margin: 0 auto 2.5rem auto; font-weight: 300; line-height: 1.7;">
+          Un viaje profundo hacia tu interior a través de la sabiduría del <span class="text-highlight">Tarot</span>, la <span class="text-highlight">Biodecodificación</span> biológica, la <span class="text-highlight">Meditación</span> guiada y la <span class="text-highlight">Sanación Energética</span> Integral.
+        </p>
+
+        <div class="reveal-on-scroll" style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; align-items: center;">
+          <a href="https://wa.me/5492915279198?text=Hola%20Vanina,%20deseo%20agendar%20una%20sesi%C3%B3n%20personalizada" target="_blank" rel="noopener noreferrer" class="btn-island">
+            <div class="btn-badge-icon whatsapp-accent">
+              <img src="assets/images/whatsapp-icon.png" width="20" height="20" alt="WhatsApp" class="whatsapp-glow-img" />
+            </div>
+            <span class="btn-label-text">Agendar sesión por WhatsApp</span>
+            <span class="btn-icon-circle">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </span>
+          </a>
+
+          <a href="#pilares" class="btn-island btn-secondary">
+            <span>Explorar los Pilares</span>
+            <span class="btn-icon-circle">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </span>
+          </a>
+        </div>
+
+        <!-- Metric Anchors -->
+        <div class="hero-metrics-container reveal-on-scroll" style="display: flex; justify-content: center; align-items: stretch; gap: clamp(1rem, 3.5vw, 3.5rem); margin-top: 4rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.08); width: 100%;">
+          <div class="metric-block" style="flex: 1 1 0; text-align: center; min-width: 0;">
+            <div class="font-serif stat-counter" data-target="10" data-prefix="+" data-suffix=" Años" style="font-size: clamp(1.4rem, 4.5vw, 2.1rem); font-weight: 500; color: var(--primary-light); white-space: nowrap; line-height: 1.15; margin-bottom: 0.25rem;">+10 Años</div>
+            <div style="font-size: clamp(0.68rem, 2vw, 0.8rem); color: var(--text-subtle); text-transform: uppercase; letter-spacing: 0.08em; line-height: 1.3;">Guía & Facilitación</div>
+          </div>
+          <div class="metric-divider" style="width: 1px; background: rgba(255,255,255,0.1); align-self: stretch;"></div>
+          <div class="metric-block" style="flex: 1 1 0; text-align: center; min-width: 0;">
+            <div class="font-serif stat-counter" data-target="100" data-suffix="%" style="font-size: clamp(1.4rem, 4.5vw, 2.1rem); font-weight: 500; color: var(--primary-light); white-space: nowrap; line-height: 1.15; margin-bottom: 0.25rem;">100%</div>
+            <div style="font-size: clamp(0.68rem, 2vw, 0.8rem); color: var(--text-subtle); text-transform: uppercase; letter-spacing: 0.08em; line-height: 1.3;">Presencia Consciente</div>
+          </div>
+          <div class="metric-divider" style="width: 1px; background: rgba(255,255,255,0.1); align-self: stretch;"></div>
+          <div class="metric-block" style="flex: 1 1 0; text-align: center; min-width: 0;">
+            <div class="font-serif" style="font-size: clamp(1.4rem, 4.5vw, 2.1rem); font-weight: 500; color: var(--primary-light); white-space: nowrap; line-height: 1.15; margin-bottom: 0.25rem;">Holístico</div>
+            <div style="font-size: clamp(0.68rem, 2vw, 0.8rem); color: var(--text-subtle); text-transform: uppercase; letter-spacing: 0.08em; line-height: 1.3;">Cuerpo & Alma</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       ABOUT & MENTOR SECTION: Editorial Warmth
+       ========================================================================= -->
+  <section style="padding: 7rem 0; background: linear-gradient(180deg, var(--bg-dark) 0%, var(--bg-deep) 100%); position: relative;">
+    <div class="container-wide">
+      <div style="display: grid; grid-template-columns: repeat(12, 1fr); gap: clamp(2rem, 4vw, 4.5rem); align-items: center;">
+        
+        <!-- Mentor Portrait Double Bezel -->
+        <div class="about-portrait-col reveal-on-scroll tilted-card-container" style="grid-column: span 5; position: relative;">
+          <!-- React Bits Signature: CircularText Rotating Stamp -->
+          <div class="circular-stamp">
+            <svg class="circular-stamp-svg" viewBox="0 0 100 100">
+              <path id="stampCircle" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" fill="none" />
+              <text font-size="8.8" font-family="Plus Jakarta Sans, sans-serif" font-weight="600" fill="#f0dcff" letter-spacing="1.8">
+                <textPath href="#stampCircle">✦ CONSCIENCIA ✦ SANACIÓN ✦ TAROT ✦</textPath>
+              </text>
+            </svg>
+          </div>
+          <div class="double-bezel tilted-card" id="mentorTiltedCard" style="padding: 8px; border-radius: 2.25rem;">
+            <div style="border-radius: calc(2.25rem - 8px); overflow: hidden; position: relative; aspect-ratio: 4/5;">
+              <img src="assets/images/portrait_enhanced.jpg" alt="Vanina K Vallejos" loading="lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover; transition: transform 700ms var(--ease-smooth);" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'" />
+              <div style="position: absolute; inset: 0; background: linear-gradient(180deg, transparent 60%, rgba(8, 6, 11, 0.85) 100%); pointer-events: none;"></div>
+              <div style="position: absolute; bottom: 1.5rem; left: 1.5rem; right: 1.5rem;">
+                <div class="font-serif" style="font-size: 1.5rem; color: #fff; font-weight: 500;">Vanina K Vallejos</div>
+                <div style="font-size: 0.825rem; color: var(--primary-light); letter-spacing: 0.05em;">Mentora de Bienestar & Guía Holística</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Narrative Content -->
+        <div class="about-narrative-col reveal-on-scroll" style="grid-column: span 7;">
+          <div class="eyebrow-badge">
+            <span class="pulse-dot"></span>
+            <span>El Enfoque</span>
+          </div>
+
+          <h2 class="font-serif" style="font-size: clamp(2.2rem, 4vw, 3.4rem); line-height: 1.1; margin-bottom: 1.5rem;">
+            Acompañando procesos de <span style="color: var(--primary-light); font-style: italic;">sanación genuina</span> y expansión del ser.
+          </h2>
+
+          <p style="color: var(--text-muted); font-size: 1.0625rem; margin-bottom: 1.25rem; font-weight: 300;">
+            Mi misión es brindarte una contención segura y sagrada, donde puedas hallar bloqueos inconscientes, comprender el mensaje detrás de los síntomas emocionales o corporales y reconectar con tu sabiduría interna.
+          </p>
+
+          <p style="color: var(--text-muted); font-size: 1.0625rem; margin-bottom: 2.25rem; font-weight: 300;">
+            No buscamos soluciones superficiales: integramos el lenguaje simbólico del <strong style="color: var(--primary-light); font-weight: 600;">Tarot Terapéutico</strong>, la precisión biológica de la <strong style="color: var(--primary-light); font-weight: 600;">Biodecodificación</strong> y la calma expansiva de la <strong style="color: var(--primary-light); font-weight: 600;">Meditación y Limpieza Energética</strong>.
+          </p>
+
+          <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+            <a href="https://wa.me/5492915279198?text=Hola%20Vanina,%20me%20gustar%C3%ADa%20conocer%20m%C3%A1s%20sobre%20tus%20sesiones" target="_blank" rel="noopener noreferrer" class="btn-island">
+              <div class="btn-badge-icon whatsapp-accent">
+                <img src="assets/images/whatsapp-icon.png" width="20" height="20" alt="WhatsApp" class="whatsapp-glow-img" />
+              </div>
+              <span class="btn-label-text">Conversar con Vanina</span>
+              <span class="btn-icon-circle">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       PILARES ESENCIALES: Bento Grid Arquitectura Doppelrand
+       ========================================================================= -->
+  <section id="pilares" style="padding: 7rem 0; background: var(--bg-dark); position: relative; overflow: hidden;">
+    <!-- Ambient Sacred Geometry Background -->
+    <div style="position: absolute; inset: 0; background: url('assets/images/sacred-geometry-bg.jpg') center/cover no-repeat; opacity: 0.16; pointer-events: none; mask-image: radial-gradient(circle at center, black 40%, transparent 92%); -webkit-mask-image: radial-gradient(circle at center, black 40%, transparent 92%);"></div>
+
+    <div class="container-wide" style="position: relative; z-index: 2;">
+      
+      <div style="text-align: center; max-width: 650px; margin: 0 auto 4rem auto;">
+        <div class="eyebrow-badge reveal-on-scroll">
+          <span class="pulse-dot"></span>
+          <span>Qué Hacemos</span>
+        </div>
+        <h2 class="font-serif reveal-on-scroll" style="font-size: clamp(2.4rem, 4vw, 3.5rem); line-height: 1.1; margin-bottom: 1rem;">
+          Pilares de <span style="font-style: italic; color: var(--primary-light);">Transformación</span>
+        </h2>
+        <p class="reveal-on-scroll" style="color: var(--text-muted); font-size: 1rem;">
+          Metodologías integradas para armonizar tu energía, mente y espíritu de forma integral.
+        </p>
+      </div>
+
+      <div class="bento-grid">
+        
+        <!-- Pillar 1: Biodecodificación (Featured Wide) -->
+        <div class="bento-col-8 reveal-on-scroll" style="grid-column: span 8;">
+          <div class="double-bezel">
+            <div class="inner-core">
+              <div>
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1.5rem;">
+                  <span style="display: inline-flex; align-items: center; justify-content: center; width: 3.5rem; height: 3.5rem; border-radius: 1rem; background: rgba(112, 48, 160, 0.25); border: 1px solid var(--border-hairline); color: var(--primary-light);">
+                    <img src="assets/images/pilar-tree.png" width="34" height="34" alt="Biodecodificación" style="display: block; object-fit: contain; filter: drop-shadow(0 0 8px rgba(240, 220, 255, 0.4));" />
+                  </span>
+                  <span style="font-size: 0.75rem; color: var(--primary-light); text-transform: uppercase; letter-spacing: 0.15em; font-weight: 600;">01 / Raíz & Biología</span>
+                </div>
+                <h3 class="font-serif" style="font-size: 1.85rem; margin-bottom: 0.75rem; color: #fff;">Biodecodificación</h3>
+                <p style="color: var(--text-muted); font-size: 0.975rem; font-weight: 300; line-height: 1.65;">
+                  Desprogramación de memorias biológicas y transgeneracionales. Rastreo del sentido biológico detrás de los síntomas físicos y emocionales para recuperar la vitalidad del ser.
+                </p>
+              </div>
+              <div style="margin-top: 2rem; display: flex; align-items: center; gap: 0.5rem; color: var(--primary-light); font-size: 0.875rem; font-weight: 500;">
+                <span>Descodificación biológica • Árbol transgeneracional</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pillar 2: Lecturas & Talleres -->
+        <div class="bento-col-4 reveal-on-scroll" style="grid-column: span 4;">
+          <div class="double-bezel">
+            <div class="inner-core">
+              <div>
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1.5rem;">
+                  <span style="display: inline-flex; align-items: center; justify-content: center; width: 3.5rem; height: 3.5rem; border-radius: 1rem; background: rgba(112, 48, 160, 0.25); border: 1px solid var(--border-hairline); color: var(--primary-light);">
+                    <img src="assets/images/pilar-book.png" width="34" height="34" alt="Lecturas & Talleres" style="display: block; object-fit: contain; filter: drop-shadow(0 0 8px rgba(240, 220, 255, 0.4));" />
+                  </span>
+                  <span style="font-size: 0.75rem; color: var(--primary-light); text-transform: uppercase; letter-spacing: 0.15em; font-weight: 600;">02 / Aprendizaje</span>
+                </div>
+                <h3 class="font-serif" style="font-size: 1.75rem; margin-bottom: 0.75rem; color: #fff;">Lecturas & Talleres</h3>
+                <p style="color: var(--text-muted); font-size: 0.95rem; font-weight: 300;">
+                  Espacios de aprendizaje vivencial, formación en grupos reducidos y encuentros prácticos para incorporar herramientas sagradas a tu vida.
+                </p>
+              </div>
+              <div style="margin-top: 1.5rem; font-size: 0.85rem; color: var(--text-subtle);">
+                Encuentros vivenciales • Formación
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pillar 3: Tarot Evolutivo & Terapéutico -->
+        <div class="bento-col-4 reveal-on-scroll" style="grid-column: span 4;">
+          <div class="double-bezel">
+            <div class="inner-core">
+              <div>
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1.5rem;">
+                  <span style="display: inline-flex; align-items: center; justify-content: center; width: 3.5rem; height: 3.5rem; border-radius: 1rem; background: rgba(112, 48, 160, 0.25); border: 1px solid var(--border-hairline); color: var(--primary-light);">
+                    <img src="assets/images/pilar-tarot.png" width="34" height="34" alt="Tarot Terapéutico" style="display: block; object-fit: contain; filter: drop-shadow(0 0 8px rgba(240, 220, 255, 0.4));" />
+                  </span>
+                  <span style="font-size: 0.75rem; color: var(--primary-light); text-transform: uppercase; letter-spacing: 0.15em; font-weight: 600;">03 / Autoconocimiento</span>
+                </div>
+                <h3 class="font-serif" style="font-size: 1.75rem; margin-bottom: 0.75rem; color: #fff;">Tarot Terapéutico</h3>
+                <p style="color: var(--text-muted); font-size: 0.95rem; font-weight: 300;">
+                  Espejo del inconsciente y del alma. Iluminamos dinámicas ocultas y patrones relacionales para tomar decisiones conscientes.
+                </p>
+              </div>
+              <div style="margin-top: 1.5rem; font-size: 0.85rem; color: var(--text-subtle);">
+                Lecturas evolutivas • Arquetipos
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pillar 4: Meditación -->
+        <div class="bento-col-4 reveal-on-scroll" style="grid-column: span 4;">
+          <div class="double-bezel">
+            <div class="inner-core">
+              <div>
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1.5rem;">
+                  <span style="display: inline-flex; align-items: center; justify-content: center; width: 3.5rem; height: 3.5rem; border-radius: 1rem; background: rgba(112, 48, 160, 0.25); border: 1px solid var(--border-hairline); color: var(--primary-light);">
+                    <img src="assets/images/pilar-meditation.png" width="34" height="34" alt="Meditación" style="display: block; object-fit: contain; filter: drop-shadow(0 0 8px rgba(240, 220, 255, 0.4));" />
+                  </span>
+                  <span style="font-size: 0.75rem; color: var(--primary-light); text-transform: uppercase; letter-spacing: 0.15em; font-weight: 600;">04 / Silencio & Presencia</span>
+                </div>
+                <h3 class="font-serif" style="font-size: 1.75rem; margin-bottom: 0.75rem; color: #fff;">Meditación</h3>
+                <p style="color: var(--text-muted); font-size: 0.95rem; font-weight: 300;">
+                  Prácticas contemplativas guiadas para calmar el sistema nervioso, expandir la presencia y anclar la serenidad en la vida cotidiana.
+                </p>
+              </div>
+              <div style="margin-top: 1.5rem; font-size: 0.85rem; color: var(--text-subtle);">
+                Calma mental • Regulación
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pillar 5: Limpiezas Energéticas -->
+        <div class="bento-col-4 reveal-on-scroll" style="grid-column: span 4;">
+          <div class="double-bezel">
+            <div class="inner-core">
+              <div>
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1.5rem;">
+                  <span style="display: inline-flex; align-items: center; justify-content: center; width: 3.25rem; height: 3.25rem; border-radius: 1rem; background: rgba(112, 48, 160, 0.25); border: 1px solid var(--border-hairline); color: var(--primary-light);">
+                    <!-- Estrella Sagrada de Armonía -->
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M12 2v20M2 12h20M4.93 4.93l14.14 14.14M4.93 19.07L19.07 4.93" opacity="0.3"/>
+                      <path d="M12 3c0 4.5-4.5 9-9 9 4.5 0 9 4.5 9 9 0-4.5 4.5-9 9-9-4.5 0-9-4.5-9-9z"/>
+                    </svg>
+                  </span>
+                  <span style="font-size: 0.75rem; color: var(--primary-light); text-transform: uppercase; letter-spacing: 0.15em; font-weight: 600;">05 / Armonía Áurica</span>
+                </div>
+                <h3 class="font-serif" style="font-size: 1.75rem; margin-bottom: 0.75rem; color: #fff;">Limpiezas Energéticas</h3>
+                <p style="color: var(--text-muted); font-size: 0.95rem; font-weight: 300;">
+                  Purificación del campo áurico, armonización de chakras y liberación de densidades energéticas para restituir tu flujo vital óptimo.
+                </p>
+              </div>
+              <div style="margin-top: 1.5rem; font-size: 0.85rem; color: var(--text-subtle);">
+                Alineación áurica • Sahumos
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SERVICIOS & CURSOS: Catálogo Elegante
+       ========================================================================= -->
+  <section id="servicios" style="padding: 7rem 0; background: linear-gradient(180deg, var(--bg-dark) 0%, var(--bg-deep) 100%); position: relative; overflow: hidden;">
+    <!-- Ethereal Nebula Portal Ambient Background -->
+    <div style="position: absolute; inset: 0; background: url('assets/images/mystic-portal-bg.jpg') center/cover no-repeat; opacity: 0.15; filter: blur(25px); pointer-events: none; mask-image: radial-gradient(circle at center, black 35%, transparent 88%); -webkit-mask-image: radial-gradient(circle at center, black 35%, transparent 88%);"></div>
+
+    <div class="container-wide" style="position: relative; z-index: 2;">
+      
+      <div style="display: flex; flex-direction: column; align-items: center; text-align: center; margin-bottom: 4rem;">
+        <div class="eyebrow-badge reveal-on-scroll">
+          <span class="pulse-dot"></span>
+          <span>Catálogo de Sesiones & Cursos</span>
+        </div>
+        <h2 class="font-serif reveal-on-scroll" style="font-size: clamp(2.4rem, 4vw, 3.5rem); margin-bottom: 1rem;">
+          Elegí tu experiencia de <span style="font-style: italic; color: var(--primary-light);">conexión</span>
+        </h2>
+        <p class="reveal-on-scroll" style="color: var(--text-muted); max-width: 600px;">
+          Sesiones personalizadas online o presenciales, diseñadas con rigurosidad y calidez para tu camino de vida.
+        </p>
+
+        <!-- Category Selector -->
+        <div class="reveal-on-scroll" style="display: flex; flex-wrap: wrap; gap: 0.75rem; justify-content: center; margin-top: 2rem;">
+          <button class="oracle-pill active" onclick="filterServices('todos', this)">Todos los Servicios</button>
+          <button class="oracle-pill" onclick="filterServices('sesiones', this)">Sesiones 1 a 1</button>
+          <button class="oracle-pill" onclick="filterServices('cursos', this)">Cursos & Talleres</button>
+          <button class="oracle-pill" onclick="filterServices('energetico', this)">Limpiezas & Sanación</button>
+        </div>
+      </div>
+
+      <div id="servicesGrid" class="bento-grid">
+        
+        <!-- Service 1 -->
+        <div class="bento-col-4 service-card reveal-on-scroll" data-category="sesiones" style="grid-column: span 4;">
+          <div class="double-bezel">
+            <div class="inner-core">
+              <div>
+                <div style="font-size: 0.75rem; color: var(--primary-light); text-transform: uppercase; letter-spacing: 0.15em; font-weight: 600; margin-bottom: 0.75rem;">Sesión 1 a 1 • 60 Min</div>
+                <h3 class="font-serif" style="font-size: 1.6rem; color: #fff; margin-bottom: 0.75rem;">Lectura Integral de Tarot</h3>
+                <p style="color: var(--text-muted); font-size: 0.925rem; font-weight: 300; margin-bottom: 1.5rem;">
+                  Alineación de arcanos para comprender encrucijadas actuales, desbloquear decisiones laborales, afectivas o personales.
+                </p>
+                <div style="border-top: 1px solid var(--border-light); padding-top: 1rem;">
+                  <div style="font-size: 0.85rem; color: var(--text-subtle);">Modalidad: Online o Presencial</div>
+                  <div style="font-size: 0.85rem; color: var(--text-subtle);">Incluye grabación de audio y síntesis</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="bento-col-4 service-card reveal-on-scroll" data-category="sesiones" style="grid-column: span 4;">
+          <div class="double-bezel">
+            <div class="inner-core">
+              <div>
+                <div style="font-size: 0.75rem; color: var(--primary-light); text-transform: uppercase; letter-spacing: 0.15em; font-weight: 600; margin-bottom: 0.75rem;">Sesión Terapéutica • 90 Min</div>
+                <h3 class="font-serif" style="font-size: 1.6rem; color: #fff; margin-bottom: 0.75rem;">Consulta de Biodecodificación</h3>
+                <p style="color: var(--text-muted); font-size: 0.925rem; font-weight: 300; margin-bottom: 1.5rem;">
+                  Rastreo del conflicto biológico detrás de afecciones y conductas repetitivas. Sanación transgeneracional consciente.
+                </p>
+                <div style="border-top: 1px solid var(--border-light); padding-top: 1rem;">
+                  <div style="font-size: 0.85rem; color: var(--text-subtle);">Análisis del árbol genealógico</div>
+                  <div style="font-size: 0.85rem; color: var(--text-subtle);">Ejercicios de integración biológica</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="bento-col-4 service-card reveal-on-scroll" data-category="energetico" style="grid-column: span 4;">
+          <div class="double-bezel">
+            <div class="inner-core">
+              <div>
+                <div style="font-size: 0.75rem; color: var(--primary-light); text-transform: uppercase; letter-spacing: 0.15em; font-weight: 600; margin-bottom: 0.75rem;">Sanación Energética • 60 Min</div>
+                <h3 class="font-serif" style="font-size: 1.6rem; color: #fff; margin-bottom: 0.75rem;">Limpieza Áurica & Armonización</h3>
+                <p style="color: var(--text-muted); font-size: 0.925rem; font-weight: 300; margin-bottom: 1.5rem;">
+                  Descarga de interferencias energéticas y alineación vibracional de centros sutiles (chakras) para recuperar vitalidad y ligereza.
+                </p>
+                <div style="border-top: 1px solid var(--border-light); padding-top: 1rem;">
+                  <div style="font-size: 0.85rem; color: var(--text-subtle);">Ideal para sobrecarga o estrés</div>
+                  <div style="font-size: 0.85rem; color: var(--text-subtle);">Armonización de espacios y personas</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="bento-col-6 service-card reveal-on-scroll" data-category="cursos" style="grid-column: span 6;">
+          <div class="double-bezel">
+            <div class="inner-core">
+              <div>
+                <div style="font-size: 0.75rem; color: var(--primary-light); text-transform: uppercase; letter-spacing: 0.15em; font-weight: 600; margin-bottom: 0.75rem;">Formación Online • Cupos Limitados</div>
+                <h3 class="font-serif" style="font-size: 1.75rem; color: #fff; margin-bottom: 0.75rem;">Taller de Meditación & Expansión de Consciencia</h3>
+                <p style="color: var(--text-muted); font-size: 0.95rem; font-weight: 300; margin-bottom: 1.5rem;">
+                  Aprende a sostener un hábito de meditación profundo, cultivar el observador interior y disolver los estados de reactividad emocional cotidiana.
+                </p>
+                <div style="display: flex; gap: 1.5rem; font-size: 0.85rem; color: var(--text-subtle);">
+                  <span>✓ 4 Módulos en vivo</span>
+                  <span>✓ Material descargable</span>
+                  <span>✓ Comunidad privada</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="bento-col-6 service-card reveal-on-scroll" data-category="cursos" style="grid-column: span 6;">
+          <div class="double-bezel">
+            <div class="inner-core">
+              <div>
+                <div style="font-size: 0.75rem; color: var(--primary-light); text-transform: uppercase; letter-spacing: 0.15em; font-weight: 600; margin-bottom: 0.75rem;">Curso Teórico-Práctico</div>
+                <h3 class="font-serif" style="font-size: 1.75rem; color: #fff; margin-bottom: 0.75rem;">Iniciación al Tarot Terapéutico y Arquetipos</h3>
+                <p style="color: var(--text-muted); font-size: 0.95rem; font-weight: 300; margin-bottom: 1.5rem;">
+                  Descubre la estructura de los 22 Arcanos Mayores, su correspondencia psicológica y el arte de interpretar lecturas con ética y sensibilidad.
+                </p>
+                <div style="display: flex; gap: 1.5rem; font-size: 0.85rem; color: var(--text-subtle);">
+                  <span>✓ Clases grabadas + encuentros</span>
+                  <span>✓ Prácticas supervisadas</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 6: Registros Akáshicos -->
+        <div class="bento-col-4 service-card reveal-on-scroll" data-category="sesiones" style="grid-column: span 4;">
+          <div class="double-bezel">
+            <div class="inner-core">
+              <div>
+                <div style="font-size: 0.75rem; color: var(--primary-light); text-transform: uppercase; letter-spacing: 0.15em; font-weight: 600; margin-bottom: 0.75rem;">Sesión Sagrada • 60 Min</div>
+                <h3 class="font-serif" style="font-size: 1.6rem; color: #fff; margin-bottom: 0.75rem;">Lectura de Registros Akáshicos</h3>
+                <p style="color: var(--text-muted); font-size: 0.925rem; font-weight: 300; margin-bottom: 1.5rem;">
+                  Apertura y consulta a la memoria cósmica de tu alma. Comprensión de lecciones kármicas, propósito de vida y guía de tus maestros espirituales.
+                </p>
+                <div style="border-top: 1px solid var(--border-light); padding-top: 1rem;">
+                  <div style="font-size: 0.85rem; color: var(--text-subtle);">Modalidad: Online o Presencial</div>
+                  <div style="font-size: 0.85rem; color: var(--text-subtle);">Preguntas libres y canalización directa</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 7: Limpieza de Hogares y Edilicias -->
+        <div class="bento-col-4 service-card reveal-on-scroll" data-category="energetico" style="grid-column: span 4;">
+          <div class="double-bezel">
+            <div class="inner-core">
+              <div>
+                <div style="font-size: 0.75rem; color: var(--primary-light); text-transform: uppercase; letter-spacing: 0.15em; font-weight: 600; margin-bottom: 0.75rem;">Sanación Espacial & Entornos</div>
+                <h3 class="font-serif" style="font-size: 1.6rem; color: #fff; margin-bottom: 0.75rem;">Limpieza Energética de Hogares & Espacios</h3>
+                <p style="color: var(--text-muted); font-size: 0.925rem; font-weight: 300; margin-bottom: 1.5rem;">
+                  Purificación, consagración y liberación de memorias densas en casas, locales y propiedades edilicias para restituir la armonía y prosperidad.
+                </p>
+                <div style="border-top: 1px solid var(--border-light); padding-top: 1rem;">
+                  <div style="font-size: 0.85rem; color: var(--text-subtle);">Diagnóstico energético de espacios</div>
+                  <div style="font-size: 0.85rem; color: var(--text-subtle);">Sahumos, geometría y sellos de resguardo</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 8: Ritualización con Velas -->
+        <div class="bento-col-4 service-card reveal-on-scroll" data-category="energetico" style="grid-column: span 4;">
+          <div class="double-bezel">
+            <div class="inner-core">
+              <div>
+                <div style="font-size: 0.75rem; color: var(--primary-light); text-transform: uppercase; letter-spacing: 0.15em; font-weight: 600; margin-bottom: 0.75rem;">Velomancia & Fuego Sagrado</div>
+                <h3 class="font-serif" style="font-size: 1.6rem; color: #fff; margin-bottom: 0.75rem;">Ritualización con Velas</h3>
+                <p style="color: var(--text-muted); font-size: 0.925rem; font-weight: 300; margin-bottom: 1.5rem;">
+                  Trabajo intencional con la simbología del fuego, interpretación de cera (velomancia) y consagración de velas rituales para apertura de caminos.
+                </p>
+                <div style="border-top: 1px solid var(--border-light); padding-top: 1rem;">
+                  <div style="font-size: 0.85rem; color: var(--text-subtle);">Trabajos intencionados personalizados</div>
+                  <div style="font-size: 0.85rem; color: var(--text-subtle);">Lectura pedagógica de llamas y lágrimas</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       TESTIMONIOS & EXPERIENCIAS: Prueba Social Terapéutica
+       ========================================================================= -->
+  <section id="testimonios" style="padding: 7rem 0; background: linear-gradient(180deg, var(--bg-deep) 0%, var(--bg-dark) 100%); position: relative; overflow: hidden;">
+    <div style="position: absolute; bottom: -10%; left: -10%; width: 45vw; height: 45vw; background: radial-gradient(circle, rgba(112, 48, 160, 0.22) 0%, rgba(8, 6, 11, 0) 70%); filter: blur(90px); pointer-events: none;"></div>
+
+    <div class="container-wide" style="position: relative; z-index: 2;">
+      
+      <div style="text-align: center; max-width: 650px; margin: 0 auto 4rem auto;">
+        <div class="eyebrow-badge reveal-on-scroll">
+          <span class="pulse-dot"></span>
+          <span>Historias de Transformación</span>
+        </div>
+        <h2 class="font-serif reveal-on-scroll" style="font-size: clamp(2.4rem, 4vw, 3.5rem); line-height: 1.1; margin-bottom: 1rem;">
+          Voces de <span style="font-style: italic; color: var(--primary-light);">Sanación</span> & Conexión
+        </h2>
+        <p class="reveal-on-scroll" style="color: var(--text-muted); font-size: 1rem;">
+          Experiencias reales de quienes han transitado sesiones individuales y formaciones con Vanina.
+        </p>
+      </div>
+
+      <div class="bento-grid">
+        
+        <!-- Testimonial 1: Estrella -->
+        <div class="bento-col-4 reveal-on-scroll" style="grid-column: span 4;">
+          <div class="double-bezel">
+            <div class="inner-core" style="display: flex; flex-direction: column; justify-content: space-between;">
+              <div>
+                <div style="color: #ffd700; font-size: 1.1rem; letter-spacing: 0.15em; margin-bottom: 1rem;">★★★★★</div>
+                <p style="color: var(--text-muted); font-size: 0.95rem; font-weight: 300; line-height: 1.65; margin-bottom: 1.5rem; font-style: italic;">
+                  "La sesión de Constelaciones con Tarot fue increíble. Al día siguiente empezaron a suceder cambios en mi familia y en mi vida: la culpa se fue, volví a creer en mí y a cuidar mi energía. Y lo más valioso: en el después ella siempre está para responder cada duda con un amor único."
+                </p>
+              </div>
+              <div style="border-top: 1px solid var(--border-light); padding-top: 1rem; display: flex; align-items: center; justify-content: space-between;">
+                <div>
+                  <div class="font-serif" style="font-size: 1.15rem; color: #fff; font-weight: 500;">Estrella</div>
+                  <div style="font-size: 0.78rem; color: var(--primary-light);">Constelaciones con Tarot • Online</div>
+                </div>
+                <span style="color: var(--primary-light); font-size: 1.25rem;">✦</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2: Dalia -->
+        <div class="bento-col-4 reveal-on-scroll" style="grid-column: span 4;">
+          <div class="double-bezel">
+            <div class="inner-core" style="display: flex; flex-direction: column; justify-content: space-between;">
+              <div>
+                <div style="color: #ffd700; font-size: 1.1rem; letter-spacing: 0.15em; margin-bottom: 1rem;">★★★★★</div>
+                <p style="color: var(--text-muted); font-size: 0.95rem; font-weight: 300; line-height: 1.65; margin-bottom: 1.5rem; font-style: italic;">
+                  "Desde el primer ritual que hice con ella en 2025 me cambió la vida. Realicé el de desbloqueo, el de trabajo, y cada uno hizo mella en mí. Con la biodescodificación me dio una luz inmensa. Estoy eternamente agradecida al universo por ponerla en mi camino."
+                </p>
+              </div>
+              <div style="border-top: 1px solid var(--border-light); padding-top: 1rem; display: flex; align-items: center; justify-content: space-between;">
+                <div>
+                  <div class="font-serif" style="font-size: 1.15rem; color: #fff; font-weight: 500;">Dalia</div>
+                  <div style="font-size: 0.78rem; color: var(--primary-light);">Biodecodificación & Rituales • Campana</div>
+                </div>
+                <span style="color: var(--primary-light); font-size: 1.25rem;">✦</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3: Lisi -->
+        <div class="bento-col-4 reveal-on-scroll" style="grid-column: span 4;">
+          <div class="double-bezel">
+            <div class="inner-core" style="display: flex; flex-direction: column; justify-content: space-between;">
+              <div>
+                <div style="color: #ffd700; font-size: 1.1rem; letter-spacing: 0.15em; margin-bottom: 1rem;">★★★★★</div>
+                <p style="color: var(--text-muted); font-size: 0.95rem; font-weight: 300; line-height: 1.65; margin-bottom: 1.5rem; font-style: italic;">
+                  "Estoy encantadísima con los trabajos de energías y velas que realicé con Vanina; en ambos los resultados fueron tal como me explicó. Destaco lo cercana y amable que es, siempre pendiente de todo con una dedicación y cariño que se sienten de verdad."
+                </p>
+              </div>
+              <div style="border-top: 1px solid var(--border-light); padding-top: 1rem; display: flex; align-items: center; justify-content: space-between;">
+                <div>
+                  <div class="font-serif" style="font-size: 1.15rem; color: #fff; font-weight: 500;">Lisi</div>
+                  <div style="font-size: 0.78rem; color: var(--primary-light);">Velomancia & Energías • España</div>
+                </div>
+                <span style="color: var(--primary-light); font-size: 1.25rem;">✦</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       FORMACIÓN PROFESIONAL & AUTORIDAD: La Constelación Flotante & Órbitas
+       ========================================================================= -->
+  <section id="formacion" style="padding: 7rem 0; background: var(--bg-dark); position: relative; overflow: hidden;">
+    <!-- Sacred Watermark & Glow Aura -->
+    <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 70vw; height: 70vw; background: radial-gradient(circle, rgba(112, 48, 160, 0.22) 0%, rgba(8, 6, 11, 0) 70%); filter: blur(90px); pointer-events: none;"></div>
+    <div style="position: absolute; inset: 0; background: url('assets/images/sacred-geometry-bg.jpg') center/cover no-repeat; opacity: 0.1; pointer-events: none;"></div>
+
+    <div class="container-wide" style="position: relative; z-index: 2;">
+      
+      <!-- Section Header -->
+      <div style="text-align: center; max-width: 720px; margin: 0 auto 3rem auto;">
+        <div class="eyebrow-badge reveal-on-scroll">
+          <span class="pulse-dot"></span>
+          <span>Matriz Interactiva de Sabiduría</span>
+        </div>
+        <h2 class="font-serif reveal-on-scroll" style="font-size: clamp(2.4rem, 4vw, 3.5rem); line-height: 1.1; margin-bottom: 1rem;">
+          Constelación de <span style="font-style: italic; color: var(--primary-light);">Trayectoria</span>
+        </h2>
+        <p class="reveal-on-scroll" style="color: var(--text-muted); font-size: 1.05rem; font-weight: 300; line-height: 1.65;">
+          Pasá el cursor o tocá sobre cualquier disciplina para canalizar su campo de acción y profundización.
+        </p>
+      </div>
+
+      <!-- ==========================================
+           DESKTOP VIEW: Interactive Orbit Constellation Matrix & Spotlight Panel
+           ========================================== -->
+      <div class="constellation-desktop-view">
+        <!-- Constellation Nodes Container -->
+        <div class="reveal-on-scroll" style="margin-bottom: 2.5rem;">
+          <div class="constellation-nodes-container">
+            
+            <button class="orbit-node is-active" onclick="selectNode(0, this)" onmouseover="selectNode(0, this)">
+              <span style="color: var(--primary-light);">✦</span>
+              <span>Biodecodificación Biológica</span>
+            </button>
+
+            <button class="orbit-node" onclick="selectNode(1, this)" onmouseover="selectNode(1, this)">
+              <span style="color: var(--primary-light);">✦</span>
+              <span>Tarot Terapéutico</span>
+            </button>
+
+            <button class="orbit-node" onclick="selectNode(2, this)" onmouseover="selectNode(2, this)">
+              <span style="color: var(--primary-light);">✦</span>
+              <span>Psicogenealogía & Transpersonal</span>
+            </button>
+
+            <button class="orbit-node" onclick="selectNode(3, this)" onmouseover="selectNode(3, this)">
+              <span style="color: var(--primary-light);">✦</span>
+              <span>Constelaciones Familiares</span>
+            </button>
+
+            <button class="orbit-node" onclick="selectNode(4, this)" onmouseover="selectNode(4, this)">
+              <span style="color: var(--primary-light);">✦</span>
+              <span>Registros Akáshicos</span>
+            </button>
+
+            <button class="orbit-node" onclick="selectNode(5, this)" onmouseover="selectNode(5, this)">
+              <span style="color: var(--primary-light);">✦</span>
+              <span>Meditación & Limpieza</span>
+            </button>
+
+            <button class="orbit-node" onclick="selectNode(6, this)" onmouseover="selectNode(6, this)">
+              <span style="color: var(--primary-light);">✦</span>
+              <span>Velomancia & Fuego Sagrado</span>
+            </button>
+
+            <button class="orbit-node" onclick="selectNode(7, this)" onmouseover="selectNode(7, this)">
+              <span style="color: var(--primary-light);">✦</span>
+              <span>Círculos & Talleres Vivenciales</span>
+            </button>
+
+          </div>
+        </div>
+
+        <!-- Interactive Detail Spotlight Panel -->
+        <div class="double-bezel reveal-on-scroll" style="max-width: 820px; margin: 0 auto 3.5rem auto; padding: 6px;">
+          <div class="inner-core" style="background: radial-gradient(circle at center, rgba(38, 22, 58, 0.85) 0%, rgba(14, 9, 21, 0.98) 100%); padding: clamp(2rem, 4vw, 3rem); text-align: center; align-items: center; min-height: 190px; justify-content: center;">
+            
+            <div id="nodeEyebrow" style="font-size: 0.75rem; color: var(--primary-light); text-transform: uppercase; letter-spacing: 0.15em; font-weight: 600; margin-bottom: 0.5rem;">
+              01 / BIOLOGÍA Y SÍNTOMA
+            </div>
+            
+            <h3 id="nodeTitle" class="font-serif" style="font-size: clamp(1.6rem, 3vw, 2.2rem); color: #fff; margin-bottom: 0.75rem; transition: opacity 250ms, transform 250ms;">
+              Biodecodificación & Descodificación Biológica
+            </h3>
+
+            <p id="nodeDesc" style="color: var(--text-muted); font-size: 1.05rem; font-weight: 300; max-width: 680px; line-height: 1.65; margin: 0 auto; transition: opacity 250ms, transform 250ms;">
+              Rastreo del conflicto biológico detrás de afecciones y síntomas corporales. Comprensión del sentido de la enfermedad y desprogramación de memorias celulares guardadas en la biología.
+            </p>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- ==========================================
+           MOBILE VIEW: Clean 8-Card Bento Grid
+           ========================================== -->
+      <div class="constellation-mobile-view reveal-on-scroll" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.25rem; margin-bottom: 3.5rem;">
+        
+        <!-- 01 -->
+        <div class="double-bezel" style="padding: 4px;">
+          <div class="inner-core" style="padding: 1.6rem; height: 100%; display: flex; flex-direction: column; justify-content: flex-start; text-align: left; background: radial-gradient(circle at top left, rgba(112, 48, 160, 0.15) 0%, rgba(14, 9, 21, 0.98) 100%);">
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.85rem;">
+              <span style="font-size: 0.72rem; color: var(--primary-light); text-transform: uppercase; letter-spacing: 0.12em; font-weight: 600;">01 / Biología y Síntoma</span>
+              <span style="color: var(--primary-light); font-size: 1rem;">✦</span>
+            </div>
+            <h3 class="font-serif" style="font-size: 1.35rem; color: #fff; margin-bottom: 0.6rem; line-height: 1.2;">Biodecodificación Biológica</h3>
+            <p style="color: var(--text-muted); font-size: 0.875rem; font-weight: 300; line-height: 1.6; margin: 0;">
+              Rastreo del conflicto biológico detrás de afecciones y síntomas corporales. Comprensión del sentido de la enfermedad y desprogramación de memorias celulares.
+            </p>
+          </div>
+        </div>
+
+        <!-- 02 -->
+        <div class="double-bezel" style="padding: 4px;">
+          <div class="inner-core" style="padding: 1.6rem; height: 100%; display: flex; flex-direction: column; justify-content: flex-start; text-align: left; background: radial-gradient(circle at top left, rgba(112, 48, 160, 0.15) 0%, rgba(14, 9, 21, 0.98) 100%);">
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.85rem;">
+              <span style="font-size: 0.72rem; color: var(--primary-light); text-transform: uppercase; letter-spacing: 0.12em; font-weight: 600;">02 / Simbología y Arquetipos</span>
+              <span style="color: var(--primary-light); font-size: 1rem;">✦</span>
+            </div>
+            <h3 class="font-serif" style="font-size: 1.35rem; color: #fff; margin-bottom: 0.6rem; line-height: 1.2;">Tarot Terapéutico</h3>
+            <p style="color: var(--text-muted); font-size: 0.875rem; font-weight: 300; line-height: 1.6; margin: 0;">
+              Lectura evolutiva de los 22 Arcanos como espejo del alma. Abordaje de patrones del inconsciente para tomar decisiones conscientes.
+            </p>
+          </div>
+        </div>
+
+        <!-- 03 -->
+        <div class="double-bezel" style="padding: 4px;">
+          <div class="inner-core" style="padding: 1.6rem; height: 100%; display: flex; flex-direction: column; justify-content: flex-start; text-align: left; background: radial-gradient(circle at top left, rgba(112, 48, 160, 0.15) 0%, rgba(14, 9, 21, 0.98) 100%);">
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.85rem;">
+              <span style="font-size: 0.72rem; color: var(--primary-light); text-transform: uppercase; letter-spacing: 0.12em; font-weight: 600;">03 / Linaje Familiar</span>
+              <span style="color: var(--primary-light); font-size: 1rem;">✦</span>
+            </div>
+            <h3 class="font-serif" style="font-size: 1.35rem; color: #fff; margin-bottom: 0.6rem; line-height: 1.2;">Psicogenealogía & Transpersonal</h3>
+            <p style="color: var(--text-muted); font-size: 0.875rem; font-weight: 300; line-height: 1.6; margin: 0;">
+              Estudio del árbol transgeneracional, disolución de lealtades invisibles y mandatos familiares inconscientes para reclamar tu propia libertad.
+            </p>
+          </div>
+        </div>
+
+        <!-- 04 -->
+        <div class="double-bezel" style="padding: 4px;">
+          <div class="inner-core" style="padding: 1.6rem; height: 100%; display: flex; flex-direction: column; justify-content: flex-start; text-align: left; background: radial-gradient(circle at top left, rgba(112, 48, 160, 0.15) 0%, rgba(14, 9, 21, 0.98) 100%);">
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.85rem;">
+              <span style="font-size: 0.72rem; color: var(--primary-light); text-transform: uppercase; letter-spacing: 0.12em; font-weight: 600;">04 / Órdenes del Amor</span>
+              <span style="color: var(--primary-light); font-size: 1rem;">✦</span>
+            </div>
+            <h3 class="font-serif" style="font-size: 1.35rem; color: #fff; margin-bottom: 0.6rem; line-height: 1.2;">Constelaciones Familiares</h3>
+            <p style="color: var(--text-muted); font-size: 0.875rem; font-weight: 300; line-height: 1.6; margin: 0;">
+              Reordenamiento de los órdenes del amor en el sistema familiar, integración de miembros excluidos y resolución de implicancias profundas.
+            </p>
+          </div>
+        </div>
+
+        <!-- 05 -->
+        <div class="double-bezel" style="padding: 4px;">
+          <div class="inner-core" style="padding: 1.6rem; height: 100%; display: flex; flex-direction: column; justify-content: flex-start; text-align: left; background: radial-gradient(circle at top left, rgba(112, 48, 160, 0.15) 0%, rgba(14, 9, 21, 0.98) 100%);">
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.85rem;">
+              <span style="font-size: 0.72rem; color: var(--primary-light); text-transform: uppercase; letter-spacing: 0.12em; font-weight: 600;">05 / Memoria del Alma</span>
+              <span style="color: var(--primary-light); font-size: 1rem;">✦</span>
+            </div>
+            <h3 class="font-serif" style="font-size: 1.35rem; color: #fff; margin-bottom: 0.6rem; line-height: 1.2;">Registros Akáshicos</h3>
+            <p style="color: var(--text-muted); font-size: 0.875rem; font-weight: 300; line-height: 1.6; margin: 0;">
+              Apertura y canalización de la memoria sutil de tu alma. Consulta a guías espirituales para comprender lecciones y tu propósito supremo.
+            </p>
+          </div>
+        </div>
+
+        <!-- 06 -->
+        <div class="double-bezel" style="padding: 4px;">
+          <div class="inner-core" style="padding: 1.6rem; height: 100%; display: flex; flex-direction: column; justify-content: flex-start; text-align: left; background: radial-gradient(circle at top left, rgba(112, 48, 160, 0.15) 0%, rgba(14, 9, 21, 0.98) 100%);">
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.85rem;">
+              <span style="font-size: 0.72rem; color: var(--primary-light); text-transform: uppercase; letter-spacing: 0.12em; font-weight: 600;">06 / Presencia & Energía</span>
+              <span style="color: var(--primary-light); font-size: 1rem;">✦</span>
+            </div>
+            <h3 class="font-serif" style="font-size: 1.35rem; color: #fff; margin-bottom: 0.6rem; line-height: 1.2;">Meditación & Limpieza</h3>
+            <p style="color: var(--text-muted); font-size: 0.875rem; font-weight: 300; line-height: 1.6; margin: 0;">
+              Regulación somática del sistema nervioso, alineación vibracional de centros de energía (chakras) y sahumerio sagrado para restituir la paz.
+            </p>
+          </div>
+        </div>
+
+        <!-- 07 -->
+        <div class="double-bezel" style="padding: 4px;">
+          <div class="inner-core" style="padding: 1.6rem; height: 100%; display: flex; flex-direction: column; justify-content: flex-start; text-align: left; background: radial-gradient(circle at top left, rgba(112, 48, 160, 0.15) 0%, rgba(14, 9, 21, 0.98) 100%);">
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.85rem;">
+              <span style="font-size: 0.72rem; color: var(--primary-light); text-transform: uppercase; letter-spacing: 0.12em; font-weight: 600;">07 / Fuego Sagrado</span>
+              <span style="color: var(--primary-light); font-size: 1rem;">✦</span>
+            </div>
+            <h3 class="font-serif" style="font-size: 1.35rem; color: #fff; margin-bottom: 0.6rem; line-height: 1.2;">Velomancia & Fuego Sagrado</h3>
+            <p style="color: var(--text-muted); font-size: 0.875rem; font-weight: 300; line-height: 1.6; margin: 0;">
+              Diagnóstico energético e intencional mediante la llama y restos de cera en velas rituales para manifestación y apertura de caminos.
+            </p>
+          </div>
+        </div>
+
+        <!-- 08 -->
+        <div class="double-bezel" style="padding: 4px;">
+          <div class="inner-core" style="padding: 1.6rem; height: 100%; display: flex; flex-direction: column; justify-content: flex-start; text-align: left; background: radial-gradient(circle at top left, rgba(112, 48, 160, 0.15) 0%, rgba(14, 9, 21, 0.98) 100%);">
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.85rem;">
+              <span style="font-size: 0.72rem; color: var(--primary-light); text-transform: uppercase; letter-spacing: 0.12em; font-weight: 600;">08 / Pedagogía Vivencial</span>
+              <span style="color: var(--primary-light); font-size: 1rem;">✦</span>
+            </div>
+            <h3 class="font-serif" style="font-size: 1.35rem; color: #fff; margin-bottom: 0.6rem; line-height: 1.2;">Círculos & Talleres</h3>
+            <p style="color: var(--text-muted); font-size: 0.875rem; font-weight: 300; line-height: 1.6; margin: 0;">
+              Creación de contenedores seguros de aprendizaje colectivo, formación en herramientas sagradas y dirección de encuentros vivenciales.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Compromiso Sagrado Full-Width Card Banner -->
+      <div class="double-bezel reveal-on-scroll" style="padding: 6px;">
+        <div class="inner-core" style="background: radial-gradient(circle at center, rgba(35, 20, 52, 0.5) 0%, rgba(14, 9, 21, 0.95) 100%); padding: 2rem 2.5rem; text-align: center; align-items: center;">
+          <div class="font-serif" style="font-size: 1.4rem; color: var(--primary-light); margin-bottom: 0.5rem;">El Compromiso de Acompañarte</div>
+          <p style="font-size: 1rem; color: var(--text-muted); font-weight: 300; max-width: 780px; line-height: 1.6; margin: 0 auto; font-style: italic;">
+            "Cada persona que llega a mi espacio recibe una mirada libre de juicio, confidencialidad absoluta y un sostenimiento amoroso adaptado a su propio ritmo de transformación."
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       PREGUNTAS FRECUENTES (FAQ Accordion - React Bits Signature)
+       ========================================================================= -->
+  <section id="faq" style="padding: 6rem 0; background: var(--bg-dark); position: relative; overflow: hidden;">
+    <div class="container-wide" style="max-width: 860px;">
+      
+      <div style="text-align: center; margin-bottom: 3.5rem;">
+        <div class="eyebrow-badge reveal-on-scroll">
+          <span class="pulse-dot"></span>
+          <span>Claridad & Respuestas</span>
+        </div>
+        <h2 class="font-serif reveal-on-scroll" style="font-size: clamp(2.2rem, 4vw, 3.2rem); margin-bottom: 1rem;">
+          Preguntas <span style="font-style: italic; color: var(--primary-light);">Frecuentes</span>
+        </h2>
+        <p class="reveal-on-scroll" style="color: var(--text-muted); font-size: 1rem;">
+          Todo lo que necesitás saber antes de agendar tu sesión o formación.
+        </p>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 1.25rem;">
+        
+        <!-- FAQ 1 -->
+        <div class="double-bezel faq-item reveal-on-scroll" onclick="toggleFaq(this)">
+          <div class="inner-core" style="padding: 1.5rem 1.75rem; flex-direction: column; justify-content: flex-start;">
+            <div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+              <h3 class="font-serif" style="font-size: 1.35rem; color: #fff; font-weight: 500;">¿Cómo es la modalidad de las sesiones (Online o Presencial)?</h3>
+              <span class="faq-icon" style="font-size: 1.5rem; color: var(--primary-light); font-weight: 600;">+</span>
+            </div>
+            <div class="faq-answer">
+              <p style="color: var(--text-muted); font-size: 0.95rem; font-weight: 300; line-height: 1.6;">
+                Las sesiones individuales (Tarot Evolutivo, Biodecodificación y Limpiezas) se realizan tanto de forma <strong>Online por videollamada HD</strong> a cualquier parte del mundo, como <strong>Presencial</strong> en nuestro espacio en Bahía Blanca. Ambas modalidades tienen exactamente la misma profundidad y efectividad.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="double-bezel faq-item reveal-on-scroll" onclick="toggleFaq(this)">
+          <div class="inner-core" style="padding: 1.5rem 1.75rem; flex-direction: column; justify-content: flex-start;">
+            <div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+              <h3 class="font-serif" style="font-size: 1.35rem; color: #fff; font-weight: 500;">¿Qué formas de pago se aceptan desde y fuera de Argentina?</h3>
+              <span class="faq-icon" style="font-size: 1.5rem; color: var(--primary-light); font-weight: 600;">+</span>
+            </div>
+            <div class="faq-answer">
+              <p style="color: var(--text-muted); font-size: 0.95rem; font-weight: 300; line-height: 1.6;">
+                Para consultantes fuera de Argentina aceptamos pagos vía <strong>PayPal</strong> y transferencias internacionales directas de forma simple y transparente. En Argentina podés abonar vía transferencia bancaria o MercadoPago.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="double-bezel faq-item reveal-on-scroll" onclick="toggleFaq(this)">
+          <div class="inner-core" style="padding: 1.5rem 1.75rem; flex-direction: column; justify-content: flex-start;">
+            <div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+              <h3 class="font-serif" style="font-size: 1.35rem; color: #fff; font-weight: 500;">¿Necesito conocimientos previos para los Cursos o Formaciones?</h3>
+              <span class="faq-icon" style="font-size: 1.5rem; color: var(--primary-light); font-weight: 600;">+</span>
+            </div>
+            <div class="faq-answer">
+              <p style="color: var(--text-muted); font-size: 0.95rem; font-weight: 300; line-height: 1.6;">
+                No es necesario ningún conocimiento previo. Nuestras formaciones y talleres están pedagógicamente estructurados para acompañar tanto a quienes inician su camino de despertar como a terapeutas que buscan profundizar sus herramientas.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="double-bezel faq-item reveal-on-scroll" onclick="toggleFaq(this)">
+          <div class="inner-core" style="padding: 1.5rem 1.75rem; flex-direction: column; justify-content: flex-start;">
+            <div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+              <h3 class="font-serif" style="font-size: 1.35rem; color: #fff; font-weight: 500;">¿Qué diferencia hay entre el Tarot Terapéutico y el adivinatorio?</h3>
+              <span class="faq-icon" style="font-size: 1.5rem; color: var(--primary-light); font-weight: 600;">+</span>
+            </div>
+            <div class="faq-answer">
+              <p style="color: var(--text-muted); font-size: 0.95rem; font-weight: 300; line-height: 1.6;">
+                El Tarot Terapéutico y Evolutivo no busca condicionarte con predicciones futuras rígidas. Utiliza los arcanos como espejo del inconsciente para revelar bloqueos del momento presente, brindándote claridad y libertad de elección consciente.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       NEWSLETTER & COMUNIDAD SAGRADA (INTEGRACIÓN OFICIAL BREVO)
+       ========================================================================= -->
+  <section id="newsletter" style="padding: 5.5rem 0; position: relative; overflow: hidden; background: radial-gradient(circle at center, rgba(30, 16, 48, 0.6) 0%, rgba(8, 6, 11, 0.95) 100%); border-top: 1px solid var(--border-hairline);">
+    <div class="container-wide">
+      <div class="double-bezel reveal-on-scroll" style="border-color: rgba(240, 220, 255, 0.25); max-width: 820px; margin: 0 auto; box-shadow: 0 35px 70px -15px rgba(0,0,0,0.8), 0 0 30px rgba(112, 48, 160, 0.2);">
+        <div class="inner-core" style="padding: clamp(2.5rem, 5vw, 3.75rem); text-align: center; align-items: center; position: relative;">
+          
+          <div class="eyebrow-badge">
+            <span class="pulse-dot"></span>
+            <span>Comunidad & Reflexiones Semanales</span>
+          </div>
+
+          <h2 class="font-serif" style="font-size: clamp(2rem, 4.5vw, 3rem); line-height: 1.15; max-width: 650px; margin-bottom: 1rem;">
+            Recibí mensajes de <span style="font-style: italic; color: var(--primary-light);">consciencia & meditación</span> en tu correo
+          </h2>
+
+          <p style="color: var(--text-muted); font-size: 1rem; max-width: 540px; margin-bottom: 2.25rem; font-weight: 300; line-height: 1.6;">
+            Sumate a nuestro círculo íntimo. Comparto lecturas del oráculo, ejercicios de introspección y novedades exclusivas de talleres antes que en redes.
+          </p>
+
+          <!-- Iframe oculto para capturar la respuesta de Brevo en segundo plano sin recargar ni salir de la página -->
+          <iframe name="brevo_hidden_iframe" id="brevo_hidden_iframe" style="display:none;" onload="handleBrevoResponse()"></iframe>
+
+          <!-- Formulario Conectado a Brevo -->
+          <form id="brevoNewsletterForm" 
+                action="https://8fc73a80.sibforms.com/serve/MUIFADjvafyOZZPfGic6G3xrSCWIykLrsfu_cE5BjfuS4YMuVY3HScTK4UyRA6KCuXvBO-mhc5P_6foFrqoK_3GtMLyKH8gXL5h3JT3rlLe1oB2SlscIpajJkh-wWrRPj_JRwSVK5rCCMU-F1QTt_i1dXaLtOxF6Qm2u1GPgCCM6_Nc2l2PCP6Y9BoPQNEoC_ALfPdBx1-4HZurxAg==" 
+                method="POST" 
+                target="brevo_hidden_iframe"
+                style="width: 100%; max-width: 580px; display: flex; flex-direction: column; gap: 1rem;">
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 0.85rem; width: 100%;">
+              <!-- Campo Nombre -->
+              <div style="text-align: left;">
+                <input type="text" 
+                       id="brevo_nombre" 
+                       name="NOMBRE" 
+                       placeholder="Tu Nombre" 
+                       required 
+                       style="width: 100%; background: rgba(255,255,255,0.04); border: 1px solid var(--border-light); border-radius: 14px; padding: 0.9rem 1.25rem; color: #fff; font-size: 0.925rem; outline: none; transition: all 250ms var(--ease-out);"
+                       onfocus="this.style.borderColor='var(--primary-light)'; this.style.boxShadow='0 0 16px rgba(240,220,255,0.2)';" 
+                       onblur="this.style.borderColor='var(--border-light)'; this.style.boxShadow='none';" />
+              </div>
+
+              <!-- Campo Email -->
+              <div style="text-align: left;">
+                <input type="email" 
+                       id="brevo_email" 
+                       name="EMAIL" 
+                       placeholder="Tu Correo Electrónico" 
+                       required 
+                       style="width: 100%; background: rgba(255,255,255,0.04); border: 1px solid var(--border-light); border-radius: 14px; padding: 0.9rem 1.25rem; color: #fff; font-size: 0.925rem; outline: none; transition: all 250ms var(--ease-out);"
+                       onfocus="this.style.borderColor='var(--primary-light)'; this.style.boxShadow='0 0 16px rgba(240,220,255,0.2)';" 
+                       onblur="this.style.borderColor='var(--border-light)'; this.style.boxShadow='none';" />
+              </div>
+            </div>
+
+            <!-- Honeypot anti-spam de Brevo -->
+            <input type="text" name="email_address_check" value="" style="display:none;" tabindex="-1" autocomplete="off" />
+            <input type="hidden" name="locale" value="es" />
+
+            <!-- Botón de Suscripción Místico -->
+            <button type="submit" 
+                    id="brevoSubmitBtn" 
+                    class="btn-island" 
+                    style="width: 100%; justify-content: center; font-size: 0.95rem; padding: 0.85rem 1.5rem; cursor: pointer; border: none; margin-top: 0.5rem;">
+              <span class="btn-label-text" style="font-weight: 600; letter-spacing: 0.05em;">Unirme al Círculo de Consciencia</span>
+              <span class="btn-icon-circle" style="width: 2.25rem; height: 2.25rem;">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </span>
+            </button>
+
+            <!-- Mensaje de Feedback Inicial -->
+            <div id="brevoStatusMsg" style="font-size: 0.825rem; color: var(--text-subtle); margin-top: 0.4rem; display: flex; align-items: center; justify-content: center; gap: 0.4rem;">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--primary-light);">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+              </svg>
+              <span>Privacidad 100% garantizada. Sin spam, solo contenido que suma luz.</span>
+            </div>
+          </form>
+
+          <!-- Tarjeta de Éxito en Pantalla (Aparece sin recargar) -->
+          <div id="brevoSuccessCard" style="display: none; width: 100%; max-width: 580px; margin-top: 1rem; padding: 2rem; background: rgba(112, 48, 160, 0.25); border: 1px solid rgba(240, 220, 255, 0.4); border-radius: 20px; text-align: center; box-shadow: 0 10px 30px rgba(112,48,160,0.3); animation: fadeIn 0.4s var(--ease-out);">
+            <div style="width: 54px; height: 54px; margin: 0 auto 1.25rem auto; background: var(--primary-light); color: #170b22; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 24px var(--primary-light);">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </div>
+            <h3 class="font-serif" style="font-size: 1.75rem; color: #fff; margin-bottom: 0.5rem;">✦ ¡Bienvenido al Círculo!</h3>
+            <p style="color: var(--primary-light); font-size: 0.95rem; line-height: 1.6; margin-bottom: 0;">
+              Tu suscripción se ha confirmado con éxito. Pronto recibirás nuestras reflexiones, lecturas y novedades sagradas directamente en tu correo.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       CONVERSIÓN DIRECTA / WHATSAPP BANNER
+       ========================================================================= -->
+  <section style="padding: 6rem 0; position: relative; overflow: hidden; background: linear-gradient(180deg, var(--bg-dark) 0%, var(--bg-deep) 100%);">
+    <div class="container-wide">
+      <div class="double-bezel reveal-on-scroll" style="border-color: rgba(240, 220, 255, 0.35); box-shadow: 0 40px 80px -20px rgba(0,0,0,0.9), 0 0 40px rgba(112, 48, 160, 0.25);">
+        <div class="inner-core" style="background: radial-gradient(circle at center, rgba(46, 26, 68, 0.9) 0%, rgba(14, 9, 21, 0.98) 100%); padding: clamp(2.5rem, 5vw, 4.5rem); text-align: center; align-items: center; position: relative; overflow: hidden;">
+          
+          <!-- Portal Graphic Ambient Overlay -->
+          <div style="position: absolute; inset: 0; background: url('assets/images/mystic-portal-bg.jpg') center/cover no-repeat; opacity: 0.25; mix-blend-mode: screen; pointer-events: none;"></div>
+          <div style="position: relative; z-index: 2; width: 100%; display: flex; flex-direction: column; align-items: center;">
+          
+          <div class="eyebrow-badge">
+            <span class="pulse-dot"></span>
+            <span>Contacto Directo & Personalizado</span>
+          </div>
+
+          <h2 class="font-serif" style="font-size: clamp(2.2rem, 5vw, 3.8rem); line-height: 1.08; max-width: 750px; margin-bottom: 1.25rem;">
+            ¿Sentís el llamado a dar el <span style="font-style: italic; color: var(--primary-light);">siguiente paso</span> en tu bienestar?
+          </h2>
+
+          <p style="color: var(--text-muted); font-size: 1.125rem; max-width: 600px; margin-bottom: 2.5rem; font-weight: 300;">
+            Escribime directamente por WhatsApp para coordinar tu sesión, consultar disponibilidad de horarios o despejar cualquier inquietud.
+          </p>
+
+          <a href="https://wa.me/5492915279198?text=Hola%20Vanina,%20deseo%20agendar%20una%20sesi%C3%B3n%20con%20vos" target="_blank" rel="noopener noreferrer" class="btn-island" style="font-size: 1.05rem; padding: 0.55rem 0.65rem 0.55rem 0.65rem;">
+            <div class="btn-badge-icon whatsapp-accent" style="width: 2.75rem; height: 2.75rem;">
+              <img src="assets/images/whatsapp-icon.png" width="24" height="24" alt="WhatsApp" class="whatsapp-glow-img" />
+            </div>
+            <span class="btn-label-text" style="padding: 0 0.8rem;">Agendar sesión por WhatsApp</span>
+            <span class="btn-icon-circle" style="width: 2.75rem; height: 2.75rem;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </span>
+          </a>
+
+          <div style="margin-top: 1.5rem; font-size: 0.85rem; color: var(--text-subtle);">
+            Respuesta personalizada • Atención online para todo el mundo & presencial
+          </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       FOOTER & COMUNIDAD MULTIMEDIA
+       ========================================================================= -->
+  <footer id="comunidad" style="padding: 5rem 0 3rem 0; background: #050407; border-top: 1px solid var(--border-hairline); position: relative; overflow: hidden;">
+    <!-- Sacred Constellations Footer Ambient Background -->
+    <div style="position: absolute; inset: 0; background: url('assets/images/sacred-geometry-bg.jpg') center bottom/cover no-repeat; opacity: 0.08; pointer-events: none; mask-image: linear-gradient(to bottom, transparent, black); -webkit-mask-image: linear-gradient(to bottom, transparent, black);"></div>
+
+    <div class="container-wide" style="position: relative; z-index: 2;">
+      
+      <div style="display: grid; grid-template-columns: repeat(12, 1fr); gap: 3rem; margin-bottom: 4rem;">
+        
+        <!-- Brand identity -->
+        <div class="footer-brand-col" style="grid-column: span 5;">
+          <div class="font-serif" style="font-size: 1.85rem; font-weight: 500; color: #fff; margin-bottom: 0.5rem;">
+            Vanina K Vallejos
+          </div>
+          <p style="color: var(--primary-light); font-size: 0.9rem; letter-spacing: 0.05em; margin-bottom: 1.25rem;">
+            Consciencia • Espiritualidad • Bienestar Holístico
+          </p>
+          <p style="color: var(--text-muted); font-size: 0.925rem; font-weight: 300; line-height: 1.6; max-width: 380px;">
+            Un espacio sagrado para reencontrarte con tu calma, sabiduría y poder de auto-sanación.
+          </p>
+        </div>
+
+        <!-- Community Exact Links -->
+        <div class="footer-links-col" style="grid-column: span 7;">
+          <div style="font-size: 0.8rem; text-transform: uppercase; color: var(--primary-light); letter-spacing: 0.15em; font-weight: 600; margin-bottom: 1.25rem;">
+            Comunidad & Canales Oficiales
+          </div>
+
+          <div class="footer-social-cards-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem;">
+            
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/vanikvallejos" target="_blank" rel="noopener noreferrer" class="double-bezel" style="text-decoration: none; padding: 4px;">
+              <div class="inner-core" style="padding: 1.1rem 1.3rem; flex-direction: row; align-items: center; justify-content: space-between;">
+                <div style="display: flex; align-items: center; gap: 0.875rem;">
+                  <span style="display: flex; align-items: center;">
+                    <img src="assets/images/instagram-icon.png" width="22" height="22" alt="Instagram" style="display: block; object-fit: contain;" />
+                  </span>
+                  <div>
+                    <div style="font-size: 0.875rem; color: #fff; font-weight: 500;">Instagram</div>
+                    <div style="font-size: 0.75rem; color: var(--text-subtle);">@vanikvallejos</div>
+                  </div>
+                </div>
+                <span style="color: var(--text-subtle); font-size: 0.875rem;">↗</span>
+              </div>
+            </a>
+
+            <!-- TikTok -->
+            <a href="https://www.tiktok.com/@vanikvallejosoficial?lang=es" target="_blank" rel="noopener noreferrer" class="double-bezel" style="text-decoration: none; padding: 4px;">
+              <div class="inner-core" style="padding: 1.1rem 1.3rem; flex-direction: row; align-items: center; justify-content: space-between;">
+                <div style="display: flex; align-items: center; gap: 0.875rem;">
+                  <span style="display: flex; align-items: center;">
+                    <img src="assets/images/tiktok-icon.png" width="22" height="22" alt="TikTok" style="display: block; object-fit: contain;" />
+                  </span>
+                  <div>
+                    <div style="font-size: 0.875rem; color: #fff; font-weight: 500;">TikTok</div>
+                    <div style="font-size: 0.75rem; color: var(--text-subtle);">@vanikvallejosoficial</div>
+                  </div>
+                </div>
+                <span style="color: var(--text-subtle); font-size: 0.875rem;">↗</span>
+              </div>
+            </a>
+
+            <!-- Spotify -->
+            <a href="https://open.spotify.com/show/23I9XBpWKh0xWu2JUhlOvt?nd=1&dlsi=a16d16024abd4175" target="_blank" rel="noopener noreferrer" class="double-bezel" style="text-decoration: none; padding: 4px;">
+              <div class="inner-core" style="padding: 1.1rem 1.3rem; flex-direction: row; align-items: center; justify-content: space-between;">
+                <div style="display: flex; align-items: center; gap: 0.875rem;">
+                  <span style="display: flex; align-items: center;">
+                    <img src="assets/images/spotify-icon.png" width="22" height="22" alt="Spotify" style="display: block; object-fit: contain;" />
+                  </span>
+                  <div>
+                    <div style="font-size: 0.875rem; color: #fff; font-weight: 500;">Spotify Podcast</div>
+                    <div style="font-size: 0.75rem; color: var(--text-subtle);">Meditaciones & Reflexiones</div>
+                  </div>
+                </div>
+                <span style="color: var(--text-subtle); font-size: 0.875rem;">↗</span>
+              </div>
+            </a>
+
+            <!-- YouTube -->
+            <a href="https://www.youtube.com/@vanikvallejos" target="_blank" rel="noopener noreferrer" class="double-bezel" style="text-decoration: none; padding: 4px;">
+              <div class="inner-core" style="padding: 1.1rem 1.3rem; flex-direction: row; align-items: center; justify-content: space-between;">
+                <div style="display: flex; align-items: center; gap: 0.875rem;">
+                  <span style="display: flex; align-items: center;">
+                    <img src="assets/images/youtube-icon.png" width="22" height="22" alt="YouTube" style="display: block; object-fit: contain;" />
+                  </span>
+                  <div>
+                    <div style="font-size: 0.875rem; color: #fff; font-weight: 500;">YouTube</div>
+                    <div style="font-size: 0.75rem; color: var(--text-subtle);">@vanikvallejos</div>
+                  </div>
+                </div>
+                <span style="color: var(--text-subtle); font-size: 0.875rem;">↗</span>
+              </div>
+            </a>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Copyright Sub-Footer -->
+      <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.06); font-size: 0.8125rem; color: var(--text-subtle);">
+        <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 0.85rem;">
+          <span>© 2026 Vanina K Vallejos. Todos los derechos reservados.</span>
+          <span style="opacity: 0.4;">•</span>
+          <a href="politica-de-privacidad.html" style="color: var(--text-muted); text-decoration: none; transition: color 200ms;" onmouseover="this.style.color='var(--primary-light)'" onmouseout="this.style.color='var(--text-muted)'">Políticas de Privacidad & Confidencialidad</a>
+        </div>
+        <div style="display: flex; align-items: center; gap: 0.35rem; color: var(--text-muted); font-size: 0.8125rem; background: rgba(112, 48, 160, 0.15); padding: 0.3rem 0.85rem; border-radius: 9999px; border: 1px solid rgba(240, 220, 255, 0.15);">
+          <span>Diseñado & Desarrollado por</span>
+          <strong style="color: var(--primary-light); font-weight: 600;">Andrés Gómez Pietrobono</strong>
+          <span style="color: var(--primary-light); font-size: 0.75rem;">✦</span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+
+
+  <!-- =========================================================================
+       INTERACTION SCRIPTS (IntersectionObserver 60fps & Filters)
+       ========================================================================= -->
+  <script>
+    // 1. High-Performance IntersectionObserver for Scroll Animations
+    document.addEventListener('DOMContentLoaded', () => {
+      const isMobile = window.innerWidth <= 768;
+      const observerOptions = {
+        root: null,
+        rootMargin: isMobile ? '0px 0px -10px 0px' : '0px 0px -50px 0px',
+        threshold: isMobile ? 0.02 : 0.1
+      };
+
+      const observer = new IntersectionObserver((entries, obs) => {
+        entries.forEach((entry, idx) => {
+          if (entry.isIntersecting) {
+            setTimeout(() => {
+              entry.target.classList.add('is-revealed');
+            }, (idx % 3) * 50);
+            obs.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+
+      document.querySelectorAll('.reveal-on-scroll').forEach(el => {
+        observer.observe(el);
+      });
+
+      // 2. Mobile Menu Handling
+      const mobileBtn = document.getElementById('mobileMenuBtn');
+      const closeBtn = document.getElementById('closeMobileMenu');
+      const mobileMenu = document.getElementById('mobileMenu');
+
+      function openMenu() {
+        mobileMenu.classList.add('is-open');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeMenu() {
+        mobileMenu.classList.remove('is-open');
+        document.body.style.overflow = '';
+      }
+
+      if (mobileBtn) mobileBtn.addEventListener('click', openMenu);
+      if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+
+      // 3. Dynamic Card Spotlight Glow Effect
+      document.querySelectorAll('.mobile-nav-link').forEach(link => {
+        link.addEventListener('click', closeMenu);
+      });
+
+      // Smooth Scroll for Nav Anchor Links with Header Offset
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          const targetId = this.getAttribute('href');
+          if (!targetId || targetId === '#') return;
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+            e.preventDefault();
+            const headerOffset = 90;
+            const elementPosition = targetElement.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+            window.scrollTo({
+              top: offsetPosition,
+              behavior: 'smooth'
+            });
+          }
+        });
+      });
+
+      // React Bits Signature: SlidingPill Tab Movement Engine
+      const slidingPill = document.getElementById('navSlidingPill');
+      const navLinks = document.querySelectorAll('.nav-link');
+      const navIsland = document.querySelector('.nav-island');
+
+      function positionSlidingPill(targetLink) {
+        if (!slidingPill || !targetLink) return;
+        const parent = targetLink.closest('li') || targetLink;
+        slidingPill.style.left = `${parent.offsetLeft}px`;
+        slidingPill.style.width = `${parent.offsetWidth}px`;
+        slidingPill.style.opacity = '1';
+      }
+
+      navLinks.forEach(link => {
+        link.addEventListener('mouseenter', () => positionSlidingPill(link));
+      });
+
+      const navContainer = document.querySelector('.nav-links');
+      if (navContainer) {
+        navContainer.addEventListener('mouseleave', () => {
+          const activeLink = document.querySelector('.nav-link.active');
+          if (activeLink) {
+            positionSlidingPill(activeLink);
+          } else if (slidingPill) {
+            slidingPill.style.opacity = '0';
+          }
+        });
+      }
+
+      // Smart Scrollspy: Highlight Active Nav Link on Scroll
+      const spySections = document.querySelectorAll('section[id], footer[id]');
+
+      function updateActiveNav() {
+        let currentSectionId = '';
+        const viewportCenter = window.scrollY + (window.innerHeight * 0.35);
+
+        spySections.forEach(section => {
+          const rect = section.getBoundingClientRect();
+          const sectionTop = rect.top + window.scrollY;
+          const sectionHeight = section.offsetHeight;
+          if (viewportCenter >= sectionTop && viewportCenter < sectionTop + sectionHeight) {
+            currentSectionId = section.getAttribute('id');
+          }
+        });
+
+        let foundActive = false;
+        navLinks.forEach(link => {
+          const href = link.getAttribute('href');
+          if (currentSectionId && href === `#${currentSectionId}`) {
+            link.classList.add('active');
+            positionSlidingPill(link);
+            foundActive = true;
+          } else {
+            link.classList.remove('active');
+          }
+        });
+
+        if (!foundActive && slidingPill) {
+          slidingPill.style.opacity = '0';
+        }
+      }
+
+      // React Bits Signature: ShrinkGlassOnScroll Engine
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 60) {
+          navIsland?.classList.add('is-shrunk');
+        } else {
+          navIsland?.classList.remove('is-shrunk');
+        }
+        updateActiveNav();
+      }, { passive: true });
+      updateActiveNav();
+
+      document.querySelectorAll('.double-bezel').forEach(card => {
+        card.addEventListener('mousemove', e => {
+          const rect = card.getBoundingClientRect();
+          const x = e.clientX - rect.left;
+          const y = e.clientY - rect.top;
+          card.style.setProperty('--mouse-x', `${x}px`);
+          card.style.setProperty('--mouse-y', `${y}px`);
+        });
+      });
+
+      // 4. Stat Counter Animated Numbers
+      const counterObserver = new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const el = entry.target;
+            const target = parseInt(el.getAttribute('data-target'), 10);
+            const prefix = el.getAttribute('data-prefix') || '';
+            const suffix = el.getAttribute('data-suffix') || '';
+            let current = 0;
+            const duration = 1500;
+            const stepTime = 20;
+            const steps = duration / stepTime;
+            const increment = target / steps;
+
+            const timer = setInterval(() => {
+              current += increment;
+              if (current >= target) {
+                current = target;
+                clearInterval(timer);
+              }
+              el.textContent = `${prefix}${Math.round(current)}${suffix}`;
+            }, stepTime);
+
+            obs.unobserve(el);
+          }
+        });
+      }, { threshold: 0.5 });
+
+      document.querySelectorAll('.stat-counter').forEach(el => {
+        counterObserver.observe(el);
+      });
+
+      // =========================================================================
+      // REACT BITS SIGNATURE: PARTICLES CANVAS (Cosmic Star Dust Engine)
+      // =========================================================================
+      const canvas = document.getElementById('reactBitsParticles');
+      if (canvas) {
+        const ctx = canvas.getContext('2d');
+        let width = canvas.width = window.innerWidth;
+        let height = canvas.height = window.innerHeight;
+        
+        window.addEventListener('resize', () => {
+          width = canvas.width = window.innerWidth;
+          height = canvas.height = window.innerHeight;
+        });
+
+        const particles = [];
+        const particleCount = Math.min(Math.floor(window.innerWidth / 12), 115);
+
+        for (let i = 0; i < particleCount; i++) {
+          particles.push({
+            x: Math.random() * width,
+            y: Math.random() * height,
+            radius: Math.random() * 2.3 + 0.8,
+            color: Math.random() > 0.35 ? 'rgba(240, 220, 255, ' : 'rgba(192, 132, 252, ',
+            alpha: Math.random() * 0.45 + 0.45,
+            speedX: (Math.random() - 0.5) * 0.4,
+            speedY: -Math.random() * 0.5 - 0.15,
+            pulseSpeed: Math.random() * 0.02 + 0.008
+          });
+        }
+
+        let mouseX = width / 2;
+        let mouseY = height / 2;
+
+        window.addEventListener('mousemove', (e) => {
+          mouseX = e.clientX;
+          mouseY = e.clientY;
+        }, { passive: true });
+
+        function animateParticles() {
+          ctx.clearRect(0, 0, width, height);
+
+          particles.forEach(p => {
+            p.y += p.speedY;
+            p.x += p.speedX;
+            p.alpha += Math.sin(Date.now() * p.pulseSpeed) * 0.004;
+
+            if (p.y < 0) { p.y = height; p.x = Math.random() * width; }
+            if (p.x < 0) p.x = width;
+            if (p.x > width) p.x = 0;
+
+            const dx = mouseX - p.x;
+            const dy = mouseY - p.y;
+            const dist = Math.sqrt(dx * dx + dy * dy);
+            if (dist < 110) {
+              const angle = Math.atan2(dy, dx);
+              p.x -= Math.cos(angle) * 0.7;
+              p.y -= Math.sin(angle) * 0.7;
+            }
+
+            ctx.beginPath();
+            ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+            ctx.fillStyle = `${p.color}${Math.max(0.1, Math.min(0.85, p.alpha))})`;
+            ctx.shadowBlur = p.radius * 4;
+            ctx.shadowColor = 'rgba(240, 220, 255, 0.8)';
+            ctx.fill();
+          });
+
+          requestAnimationFrame(animateParticles);
+        }
+        animateParticles();
+      }
+
+      // =========================================================================
+      // REACT BITS SIGNATURE: TILTED CARD (3D Parallax Perspective)
+      // =========================================================================
+      const tiltedCard = document.getElementById('mentorTiltedCard');
+      if (tiltedCard) {
+        const container = tiltedCard.closest('.tilted-card-container') || tiltedCard;
+        container.addEventListener('mousemove', (e) => {
+          const rect = container.getBoundingClientRect();
+          const x = e.clientX - rect.left;
+          const y = e.clientY - rect.top;
+          const centerX = rect.width / 2;
+          const centerY = rect.height / 2;
+
+          const rotateX = ((y - centerY) / centerY) * -12;
+          const rotateY = ((x - centerX) / centerX) * 12;
+
+          tiltedCard.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.03, 1.03, 1.03)`;
+        });
+
+        container.addEventListener('mouseleave', () => {
+          tiltedCard.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)';
+        });
+      }
+
+      // =========================================================================
+      // REACT BITS SIGNATURE: MAGNET BUTTON (Cursor Attraction)
+      // =========================================================================
+      document.querySelectorAll('.btn-island').forEach(btn => {
+        btn.addEventListener('mousemove', (e) => {
+          const rect = btn.getBoundingClientRect();
+          const x = e.clientX - (rect.left + rect.width / 2);
+          const y = e.clientY - (rect.top + rect.height / 2);
+
+          btn.style.transform = `translate(${x * 0.2}px, ${y * 0.2}px) scale(1.03)`;
+        });
+
+        btn.addEventListener('mouseleave', () => {
+          btn.style.transform = 'translate(0px, 0px) scale(1)';
+        });
+      });
+
+      // =========================================================================
+      // REACT BITS SIGNATURE: DECAY CARD / ELASTIC CARDS (3D Decay Bounce Physics)
+      // =========================================================================
+      document.querySelectorAll('.double-bezel').forEach(card => {
+        card.classList.add('elastic-card');
+
+        card.addEventListener('mousemove', e => {
+          card.classList.remove('elastic-snap');
+          const rect = card.getBoundingClientRect();
+          const x = e.clientX - (rect.left + rect.width / 2);
+          const y = e.clientY - (rect.top + rect.height / 2);
+
+          const tiltX = (y / rect.height) * -10;
+          const tiltY = (x / rect.width) * 10;
+          const moveX = (x / rect.width) * 6;
+          const moveY = (y / rect.height) * 6;
+
+          card.style.transform = `perspective(1000px) translate3d(${moveX}px, ${moveY - 5}px, 12px) rotateX(${tiltX}deg) rotateY(${tiltY}deg) scale3d(1.02, 1.02, 1.02)`;
+        });
+
+        card.addEventListener('mouseleave', () => {
+          card.classList.add('elastic-snap');
+          card.style.transform = 'perspective(1000px) translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)';
+        });
+      });
+    });
+
+    // =========================================================================
+    // REACT BITS SIGNATURE: FAQ ACCORDION INTERACTIVE SWITCHER
+    // =========================================================================
+    function toggleFaq(element) {
+      const isActive = element.classList.contains('is-active');
+      document.querySelectorAll('.faq-item').forEach(item => {
+        item.classList.remove('is-active');
+      });
+
+      if (!isActive) {
+        element.classList.add('is-active');
+      }
+    }
+
+    // =========================================================================
+    // REACT BITS SIGNATURE: OFICIAL BREVO FORM HANDLER & INLINE SUCCESS
+    // =========================================================================
+    let isBrevoSubmitting = false;
+
+    const brevoForm = document.getElementById('brevoNewsletterForm');
+    if (brevoForm) {
+      brevoForm.addEventListener('submit', () => {
+        isBrevoSubmitting = true;
+        const submitBtn = document.getElementById('brevoSubmitBtn');
+        if (submitBtn) {
+          submitBtn.disabled = true;
+          submitBtn.innerHTML = '<span class="btn-label-text">Conectando con el Círculo...</span>';
+        }
+      });
+    }
+
+    function handleBrevoResponse() {
+      if (!isBrevoSubmitting) return;
+      isBrevoSubmitting = false;
+
+      // Ocultar el formulario y mostrar la tarjeta mística de éxito
+      if (brevoForm) brevoForm.style.display = 'none';
+      const successCard = document.getElementById('brevoSuccessCard');
+      if (successCard) {
+        successCard.style.display = 'block';
+        successCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    }
+
+    // 5. Interactive Service Category Filtering
+    function filterServices(category, btnElement) {
+      document.querySelectorAll('.oracle-pill').forEach(btn => btn.classList.remove('active'));
+      btnElement.classList.add('active');
+
+      const cards = document.querySelectorAll('.service-card');
+      cards.forEach(card => {
+        const itemCategory = card.getAttribute('data-category');
+        if (category === 'todos' || itemCategory === category) {
+          card.style.display = '';
+          setTimeout(() => {
+            card.style.opacity = '1';
+            card.style.transform = 'translateY(0)';
+          }, 50);
+        } else {
+          card.style.opacity = '0';
+          card.style.transform = 'translateY(15px)';
+          setTimeout(() => {
+            card.style.display = 'none';
+          }, 200);
+        }
+      });
+    }
+
+    // =========================================================================
+    // REACT BITS SIGNATURE: FLOATING CONSTELLATION INTERACTIVE ENGINE
+    // =========================================================================
+    const constellationData = [
+      {
+        eyebrow: "01 / BIOLOGÍA Y SÍNTOMA",
+        title: "Biodecodificación & Descodificación Biológica",
+        desc: "Rastreo del conflicto biológico detrás de afecciones y síntomas corporales. Comprensión del sentido de la enfermedad y desprogramación de memorias celulares guardadas en la biología."
+      },
+      {
+        eyebrow: "02 / SIMBOLOGÍA Y ARQUETIPOS",
+        title: "Tarot Terapéutico & Simbología Junguiana",
+        desc: "Lectura evolutiva de los 22 Arcanos Mayores y Menores como espejo del alma. Abordaje de patrones del inconsciente individual y colectivo para tomar decisiones conscientes."
+      },
+      {
+        eyebrow: "03 / ÁRBOL GENEALÓGICO Y LINAJE",
+        title: "Psicogenealogía & Psicología Transpersonal",
+        desc: "Estudio del árbol transgeneracional, disolución de lealtades invisibles y mandatos familiares inconscientes para reclamar tu propia voz libre."
+      },
+      {
+        eyebrow: "04 / ORDEN SISTÉMICO Y FAMILIA",
+        title: "Constelaciones Familiares & Sistémicas",
+        desc: "Reordenamiento de los órdenes del amor en el sistema familiar, integración de miembros excluidos y resolución de implicancias profundas."
+      },
+      {
+        eyebrow: "05 / MEMORIA CÓSMICA Y ALMA",
+        title: "Registros Akáshicos & Lectura del Campo",
+        desc: "Apertura y canalización de la memoria sutil de tu alma. Consulta a guías espirituales para comprender lecciones kármicas y tu propósito supremo."
+      },
+      {
+        eyebrow: "06 / PRESENCIA Y ALINEACIÓN SOMÁTICA",
+        title: "Facilitación de Meditación & Limpieza Energética",
+        desc: "Regulación somática del sistema nervioso, alineación vibracional de centros de energía (chakras) y sahumerio sagrado para restituir la paz interior."
+      },
+      {
+        eyebrow: "07 / FUEGO SAGRADO E INTENCIÓN",
+        title: "Velomancia & Lectura del Fuego Sagrado",
+        desc: "Diagnóstico energético e intencional mediante la llama y restos de cera en velas rituales. Interpretación del fuego sagrado para apertura de caminos."
+      },
+      {
+        eyebrow: "08 / PEDAGOGÍA Y COMUNIDAD",
+        title: "Dirección de Círculos & Talleres Vivenciales",
+        desc: "Creación de contenedores seguros de aprendizaje colectivo, formación en herramientas sagradas y dirección de encuentros vivenciales en grupos reducidos."
+      }
+    ];
+
+    function selectNode(index, btnElement) {
+      document.querySelectorAll('.orbit-node').forEach(b => b.classList.remove('is-active'));
+      btnElement.classList.add('is-active');
+
+      const data = constellationData[index];
+      const title = document.getElementById('nodeTitle');
+      const desc = document.getElementById('nodeDesc');
+      const eyebrow = document.getElementById('nodeEyebrow');
+
+      if (!data || !title) return;
+
+      title.style.opacity = '0';
+      title.style.transform = 'translateY(6px)';
+      desc.style.opacity = '0';
+      desc.style.transform = 'translateY(6px)';
+
+      setTimeout(() => {
+        eyebrow.textContent = data.eyebrow;
+        title.textContent = data.title;
+        desc.textContent = data.desc;
+        title.style.opacity = '1';
+        title.style.transform = 'translateY(0)';
+        desc.style.opacity = '1';
+        desc.style.transform = 'translateY(0)';
+      }, 150);
+    }
+  </script>
+</body>
+</html>

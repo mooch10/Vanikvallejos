@@ -624,6 +624,162 @@
       transform: translateY(0);
     }
 
+    /* =========================================================================
+       HERO AURA SONAR COMPONENT: "Mi camino en el 2027"
+       Ondas concéntricas de pulso sutil (sin efecto imán, 60fps)
+       ========================================================================= */
+    .hero-sonar-wrap {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-sonar-wave {
+      position: absolute;
+      inset: 0;
+      border-radius: 9999px;
+      border: 1.5px solid var(--primary-light);
+      pointer-events: none;
+      opacity: 0;
+      animation: heroSonarPulse 3.8s cubic-bezier(0.2, 0.8, 0.2, 1) infinite;
+    }
+
+    .hero-sonar-wave:nth-child(1) { animation-delay: 0s; }
+    .hero-sonar-wave:nth-child(2) { animation-delay: 1.25s; }
+    .hero-sonar-wave:nth-child(3) { animation-delay: 2.5s; }
+
+    @keyframes heroSonarPulse {
+      0% {
+        transform: scale(0.92);
+        opacity: 0.8;
+        border-color: rgba(240, 220, 255, 0.85);
+        box-shadow: 0 0 22px rgba(168, 85, 247, 0.65), inset 0 0 10px rgba(240, 220, 255, 0.3);
+      }
+      50% {
+        opacity: 0.35;
+      }
+      100% {
+        transform: scale(1.42);
+        opacity: 0;
+        border-color: rgba(112, 48, 160, 0);
+        box-shadow: 0 0 45px rgba(112, 48, 160, 0);
+      }
+    }
+
+    .hero-sonar-pill {
+      position: relative;
+      z-index: 5;
+      display: inline-flex;
+      align-items: center;
+      gap: 1.35rem;
+      background: radial-gradient(ellipse at top center, rgba(112, 48, 160, 0.95) 0%, rgba(22, 12, 34, 0.98) 85%);
+      border: 1.5px solid rgba(240, 220, 255, 0.55);
+      border-radius: 9999px;
+      padding: 0.8rem 1.15rem 0.8rem 2rem;
+      text-decoration: none;
+      box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.95), 0 0 35px rgba(112, 48, 160, 0.65), inset 0 1px 2px rgba(255, 255, 255, 0.45);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      transition: transform 250ms var(--ease-spring), border-color 250ms ease, box-shadow 250ms ease, filter 200ms ease;
+      cursor: pointer;
+    }
+
+    .hero-sonar-pill:hover {
+      transform: translateY(-3px) scale(1.03);
+      border-color: rgba(240, 220, 255, 0.95);
+      box-shadow: 0 25px 65px -5px rgba(112, 48, 160, 0.85), 0 0 55px rgba(240, 220, 255, 0.65), inset 0 1px 3px rgba(255, 255, 255, 0.6);
+      filter: brightness(1.06);
+    }
+
+    .hero-sonar-pill:active {
+      transform: scale(0.98);
+    }
+
+    .hero-sonar-pill:hover ~ .hero-sonar-wave,
+    .hero-sonar-wrap:hover .hero-sonar-wave {
+      animation-duration: 2.3s;
+    }
+
+    .hero-sonar-tag {
+      display: flex;
+      align-items: center;
+      gap: 0.45rem;
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: var(--primary-light);
+      font-weight: 600;
+      margin-bottom: 0.2rem;
+    }
+
+    .hero-radar-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #25D366;
+      box-shadow: 0 0 12px #25D366;
+      animation: heroRadarFlash 1.6s infinite ease-in-out;
+    }
+
+    @keyframes heroRadarFlash {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.3; transform: scale(0.7); }
+    }
+
+    .hero-sonar-title {
+      font-family: var(--font-serif);
+      font-size: clamp(1.5rem, 3.5vw, 2.15rem);
+      color: #ffffff;
+      line-height: 1.05;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      white-space: nowrap;
+    }
+
+    .hero-sonar-badge {
+      width: 3.5rem;
+      height: 3.5rem;
+      border-radius: 50%;
+      background: rgba(37, 211, 102, 0.16);
+      border: 1px solid rgba(37, 211, 102, 0.45);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      box-shadow: 0 0 20px rgba(37, 211, 102, 0.25);
+      transition: transform 300ms var(--ease-spring), background 300ms ease, box-shadow 300ms ease;
+    }
+
+    .hero-sonar-pill:hover .hero-sonar-badge {
+      transform: scale(1.1) rotate(-8deg);
+      background: rgba(37, 211, 102, 0.28);
+      box-shadow: 0 0 30px rgba(37, 211, 102, 0.55);
+    }
+
+    @media (max-width: 640px) {
+      .hero-sonar-wrap {
+        padding: 0.75rem 0.25rem;
+        width: 100%;
+      }
+      .hero-sonar-pill {
+        width: 100%;
+        max-width: 100%;
+        padding: 0.75rem 0.95rem 0.75rem 1.35rem;
+        gap: 0.85rem;
+        justify-content: space-between;
+      }
+      .hero-sonar-title {
+        font-size: 1.38rem;
+      }
+      .hero-sonar-badge {
+        width: 3.1rem;
+        height: 3.1rem;
+      }
+    }
+
     /* Container Standard */
     .container-wide {
       max-width: 1240px;
@@ -1117,18 +1273,44 @@
           Un viaje profundo hacia tu interior a través de la sabiduría del <span class="text-highlight">Tarot</span>, la <span class="text-highlight">Biodecodificación</span> biológica, la <span class="text-highlight">Meditación</span> guiada y la <span class="text-highlight">Sanación Energética</span> Integral.
         </p>
 
-        <div class="reveal-on-scroll" style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; align-items: center;">
-          <a href="https://wa.me/5492915367461?text=Hola%20Vanina,%20deseo%20agendar%20una%20sesi%C3%B3n%20personalizada" target="_blank" rel="noopener noreferrer" class="btn-island">
-            <div class="btn-badge-icon whatsapp-accent">
-              <img src="assets/images/whatsapp-icon.png" width="20" height="20" alt="WhatsApp" class="whatsapp-glow-img" />
+        <!-- GRAN BOTÓN PRINCIPAL LLAMATIVO 2027: AURA SONAR CELESTIAL -->
+        <div class="reveal-on-scroll" style="display: flex; justify-content: center; width: 100%; margin-bottom: 1.5rem;">
+          <div class="hero-sonar-wrap">
+            <div class="hero-sonar-wave"></div>
+            <div class="hero-sonar-wave"></div>
+            <div class="hero-sonar-wave"></div>
+
+            <a href="https://wa.me/5492915367461?text=Hola%20Vanina%20%E2%9C%A8%20Siento%20el%20llamado%20de%20descubrir%20Mi%20Camino%20en%20el%202027.%20%C2%BFC%C3%B3mo%20es%20la%20consulta%20para%20este%20a%C3%B1o%3F" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="hero-sonar-pill"
+               aria-label="Consultar Mi camino en el 2027 por WhatsApp">
+              
+              <div style="display: flex; flex-direction: column; text-align: left;">
+                <div class="hero-sonar-tag">
+                  <span class="hero-radar-dot"></span>
+                  <span>Frecuencia 2027 Activa</span>
+                </div>
+                <div class="hero-sonar-title">
+                  Mi camino en el 2027
+                </div>
+              </div>
+
+              <div class="hero-sonar-badge">
+                <img src="assets/images/whatsapp-icon.png" width="28" height="28" alt="WhatsApp" class="whatsapp-glow-img" />
+              </div>
+
+            </a>
+          </div>
+        </div>
+
+        <!-- Acciones complementarias del Hero -->
+        <div class="reveal-on-scroll" style="display: flex; flex-wrap: wrap; gap: 0.85rem; justify-content: center; align-items: center;">
+          <a href="https://wa.me/5492915367461?text=Hola%20Vanina,%20deseo%20agendar%20una%20sesi%C3%B3n%20personalizada" target="_blank" rel="noopener noreferrer" class="btn-island btn-secondary" style="font-size: 0.875rem;">
+            <div class="btn-badge-icon whatsapp-accent" style="width: 2rem; height: 2rem;">
+              <img src="assets/images/whatsapp-icon.png" width="16" height="16" alt="WhatsApp" class="whatsapp-glow-img" />
             </div>
-            <span class="btn-label-text">Agendar sesión por WhatsApp</span>
-            <span class="btn-icon-circle">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="7" y1="17" x2="17" y2="7"></line>
-                <polyline points="7 7 17 7 17 17"></polyline>
-              </svg>
-            </span>
+            <span class="btn-label-text">Otras Sesiones</span>
           </a>
 
           <!-- Botón copiar WhatsApp exclusivo para mobile en el inicio -->
@@ -1139,13 +1321,13 @@
                 <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
               </svg>
             </span>
-            <span class="copy-btn-text">Copiar número: +54 9 291 536-7461</span>
+            <span class="copy-btn-text">Copiar número</span>
           </button>
 
-          <a href="#pilares" class="btn-island btn-secondary">
+          <a href="#pilares" class="btn-island btn-secondary" style="font-size: 0.875rem;">
             <span>Explorar los Pilares</span>
-            <span class="btn-icon-circle">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <span class="btn-icon-circle" style="width: 2rem; height: 2rem;">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                 <polyline points="6 9 12 15 18 9"></polyline>
               </svg>
             </span>

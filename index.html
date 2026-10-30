@@ -632,11 +632,11 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 1.25rem;
+      gap: clamp(1.75rem, 3.5vw, 2.75rem);
       flex-wrap: wrap;
       width: 100%;
-      max-width: 1080px;
-      margin: 0 auto 1.5rem auto;
+      max-width: 1120px;
+      margin: 0 auto 2.25rem auto;
     }
 
     .hero-sonar-wrap {
@@ -644,7 +644,7 @@
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      padding: 1.25rem 0.85rem;
+      padding: 1.35rem 1.1rem;
       margin-bottom: 0;
     }
 
@@ -816,7 +816,7 @@
 
     @media (max-width: 900px) {
       .hero-dual-2027-wrap {
-        gap: 0.85rem;
+        gap: 1.5rem;
       }
       .hero-sonar-title {
         font-size: clamp(1.2rem, 2.5vw, 1.55rem);
@@ -826,8 +826,9 @@
     @media (max-width: 768px) {
       .hero-dual-2027-wrap {
         flex-direction: column;
-        gap: 0.75rem;
+        gap: 1.5rem;
         width: 100%;
+        margin-bottom: 2rem;
       }
       .hero-sonar-wrap {
         width: 100%;
@@ -1387,7 +1388,7 @@
               <div style="display: flex; flex-direction: column; text-align: left;">
                 <div class="hero-sonar-tag hero-solar-tag">
                   <span class="hero-radar-dot hero-solar-dot"></span>
-                  <span>Ciclo Solar 2027</span>
+                  <span>Ciclo Solar</span>
                 </div>
                 <div class="hero-sonar-title">
                   Tu Revolución Solar 2027
@@ -1416,7 +1417,7 @@
               <div style="display: flex; flex-direction: column; text-align: left;">
                 <div class="hero-sonar-tag">
                   <span class="hero-radar-dot"></span>
-                  <span>Frecuencia 2027 Activa</span>
+                  <span>Frecuencia Activa</span>
                 </div>
                 <div class="hero-sonar-title">
                   Mi camino en el 2027
@@ -1434,12 +1435,6 @@
 
         <!-- Acciones complementarias del Hero -->
         <div class="reveal-on-scroll" style="display: flex; flex-wrap: wrap; gap: 0.85rem; justify-content: center; align-items: center;">
-          <a href="https://wa.me/5492915367461?text=Hola%20Vanina,%20deseo%20agendar%20una%20sesi%C3%B3n%20personalizada" target="_blank" rel="noopener noreferrer" class="btn-island btn-secondary" style="font-size: 0.875rem;">
-            <div class="btn-badge-icon whatsapp-accent" style="width: 2rem; height: 2rem;">
-              <img src="assets/images/whatsapp-icon.png" width="16" height="16" alt="WhatsApp" class="whatsapp-glow-img" />
-            </div>
-            <span class="btn-label-text">Otras Sesiones</span>
-          </a>
 
           <!-- Botón copiar WhatsApp exclusivo para mobile en el inicio -->
           <button type="button" class="btn-copy-wa mobile-only" onclick="copyWhatsAppNumber(this)" aria-label="Copiar número de WhatsApp">

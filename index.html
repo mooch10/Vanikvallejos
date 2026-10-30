@@ -634,9 +634,9 @@
       flex-wrap: nowrap;
       justify-content: center;
       align-items: center;
-      gap: clamp(1.75rem, 3.2vw, 3.25rem);
+      gap: clamp(1.75rem, 3.5vw, 3rem);
       width: 100%;
-      max-width: 1040px;
+      max-width: 1080px;
       margin: 0 auto 2.25rem auto;
     }
 
@@ -647,9 +647,7 @@
       justify-content: center;
       padding: 0.85rem 0.5rem;
       margin: 0;
-      flex: 1 1 0;
-      max-width: 470px;
-      min-width: 0;
+      flex: 0 1 auto;
     }
 
     .hero-sonar-wave {
@@ -668,7 +666,7 @@
 
     @keyframes heroSonarPulse {
       0% {
-        transform: scale(0.95);
+        transform: scale(0.96);
         opacity: 0.75;
         border-color: rgba(240, 220, 255, 0.8);
         box-shadow: 0 0 16px rgba(168, 85, 247, 0.5), inset 0 0 8px rgba(240, 220, 255, 0.25);
@@ -677,7 +675,7 @@
         opacity: 0.3;
       }
       100% {
-        transform: scale(1.15);
+        transform: scale(1.14);
         opacity: 0;
         border-color: rgba(112, 48, 160, 0);
         box-shadow: 0 0 25px rgba(112, 48, 160, 0);
@@ -692,7 +690,7 @@
 
     @keyframes heroSolarPulse {
       0% {
-        transform: scale(0.95);
+        transform: scale(0.96);
         opacity: 0.8;
         border-color: rgba(255, 224, 160, 0.85);
         box-shadow: 0 0 18px rgba(251, 191, 36, 0.5), inset 0 0 8px rgba(255, 240, 200, 0.3);
@@ -701,7 +699,7 @@
         opacity: 0.3;
       }
       100% {
-        transform: scale(1.15);
+        transform: scale(1.14);
         opacity: 0;
         border-color: rgba(217, 119, 6, 0);
         box-shadow: 0 0 25px rgba(217, 119, 6, 0);
@@ -711,21 +709,21 @@
     .hero-sonar-pill {
       position: relative;
       z-index: 5;
-      display: flex;
+      display: inline-flex;
       align-items: center;
-      justify-content: space-between;
-      width: 100%;
-      gap: 0.9rem;
+      justify-content: center;
+      gap: 1.25rem;
       background: radial-gradient(ellipse at top center, rgba(112, 48, 160, 0.95) 0%, rgba(22, 12, 34, 0.98) 85%);
       border: 1.5px solid rgba(240, 220, 255, 0.55);
       border-radius: 9999px;
-      padding: 0.75rem 1rem 0.75rem 1.6rem;
+      padding: 0.75rem 1.35rem 0.75rem 1.65rem;
       text-decoration: none;
       box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.95), 0 0 35px rgba(112, 48, 160, 0.65), inset 0 1px 2px rgba(255, 255, 255, 0.45);
       backdrop-filter: blur(24px);
       -webkit-backdrop-filter: blur(24px);
       transition: transform 250ms var(--ease-spring), border-color 250ms ease, box-shadow 250ms ease, filter 200ms ease;
       cursor: pointer;
+      white-space: nowrap;
     }
 
     .hero-solar-pill {
@@ -735,7 +733,7 @@
     }
 
     .hero-sonar-pill:hover {
-      transform: translateY(-3px) scale(1.02);
+      transform: translateY(-3px) scale(1.025);
       border-color: rgba(240, 220, 255, 0.95);
       box-shadow: 0 25px 65px -5px rgba(112, 48, 160, 0.85), 0 0 55px rgba(240, 220, 255, 0.65), inset 0 1px 3px rgba(255, 255, 255, 0.6);
       filter: brightness(1.06);
@@ -793,7 +791,7 @@
 
     .hero-sonar-title {
       font-family: var(--font-serif);
-      font-size: clamp(1.18rem, 1.8vw, 1.65rem);
+      font-size: clamp(1.22rem, 1.8vw, 1.65rem);
       color: #ffffff;
       line-height: 1.1;
       font-weight: 500;
@@ -826,14 +824,13 @@
     @media (max-width: 1024px) {
       .hero-dual-2027-wrap {
         gap: 1.5rem;
-        max-width: 900px;
       }
       .hero-sonar-pill {
-        padding: 0.7rem 0.9rem 0.7rem 1.35rem;
-        gap: 0.75rem;
+        padding: 0.7rem 1.1rem 0.7rem 1.35rem;
+        gap: 1rem;
       }
       .hero-sonar-title {
-        font-size: clamp(1.1rem, 1.7vw, 1.35rem);
+        font-size: clamp(1.12rem, 1.7vw, 1.35rem);
       }
       .hero-sonar-badge {
         width: 3rem;
@@ -844,14 +841,13 @@
     @media (max-width: 768px) and (min-width: 641px) {
       .hero-dual-2027-wrap {
         gap: 1.1rem;
-        width: 100%;
       }
       .hero-sonar-wrap {
         padding: 0.65rem 0.25rem;
       }
       .hero-sonar-pill {
-        padding: 0.65rem 0.75rem 0.65rem 1.1rem;
-        gap: 0.65rem;
+        padding: 0.65rem 0.95rem 0.65rem 1.15rem;
+        gap: 0.85rem;
       }
       .hero-sonar-title {
         font-size: 1.12rem;
@@ -888,6 +884,7 @@
         max-width: 100%;
         padding: 0.75rem 1rem 0.75rem 1.35rem;
         gap: 1rem;
+        justify-content: space-between;
       }
       .hero-sonar-title {
         font-size: clamp(1.18rem, 4.4vw, 1.4rem);
@@ -1426,7 +1423,7 @@
             <div class="hero-sonar-wave hero-solar-wave"></div>
             <div class="hero-sonar-wave hero-solar-wave"></div>
 
-            <a href="https://wa.me/5492915367461?text=Hola%20Vanina%20%E2%9C%A8%20Siento%20el%20llamado%20de%20consultar%20por%20Tu%20Revoluci%C3%B3n%20Solar%202027.%20%C2%BFC%C3%B3mo%20es%20la%20modalidad%20y%20disponibilidad%3F" 
+            <a href="https://wa.me/5492915367461?text=Hola%20Vanina,%20quiero%20consultar%20por%20Mi%20Revolucion%20Solar%20en%202027.%20%C2%BFC%C3%B3mo%20es%20la%20modalidad%20y%20disponibilidad%3F" 
                target="_blank" 
                rel="noopener noreferrer" 
                class="hero-sonar-pill hero-solar-pill"
@@ -1455,7 +1452,7 @@
             <div class="hero-sonar-wave"></div>
             <div class="hero-sonar-wave"></div>
 
-            <a href="https://wa.me/5492915367461?text=Hola%20Vanina%20%E2%9C%A8%20Siento%20el%20llamado%20de%20descubrir%20Mi%20Camino%20en%20el%202027.%20%C2%BFC%C3%B3mo%20es%20la%20consulta%20para%20este%20a%C3%B1o%3F" 
+            <a href="https://wa.me/5492915367461?text=Hola%20Vanina,%20siento%20el%20llamado%20de%20descubrir%20Mi%20Camino%20en%20el%202027.%20%C2%BFC%C3%B3mo%20es%20la%20consulta%20para%20este%20a%C3%B1o%3F" 
                target="_blank" 
                rel="noopener noreferrer" 
                class="hero-sonar-pill"
